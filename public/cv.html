@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Jose Manuel Alba Peña</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="print-controls">
+        <button onclick="window.print()" class="btn-print"><i class="fas fa-file-pdf"></i> Guardar como PDF</button>
+        <p class="print-hint">Tip: En la ventana de impresión, selecciona "Guardar como PDF" y asegúrate de activar
+            "Gráficos de fondo".</p>
+    </div>
+
+    <div class="cv-container">
+        <aside class="sidebar">
+            <div class="profile-photo">
+                <img src="profile.jpg" alt="Jose Manuel Alba Peña">
+            </div>
+            <div class="profile-header">
+                <h1>Jose Manuel<br>Alba Peña</h1>
+                <h2>Desarrollador Full Stack</h2>
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:manualbadj@gmail.com">manualbadj@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+34 651759534</span>
+                </div>
+                <!-- Ubicación pendiente, se puede añadir luego -->
+            </div>
+
+            <section class="skills-section">
+                <h3><i class="fas fa-code"></i> Habilidades</h3>
+
+                <div class="skill-group">
+                    <h4>Frontend</h4>
+                    <div class="tags">
+                        <span>Angular 13+</span>
+                        <span>React</span>
+                        <span>JavaScript (ES6+)</span>
+                        <span>jQuery</span>
+                        <span>HTML5/CSS3</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h4>Backend</h4>
+                    <div class="tags">
+                        <span>.NET Core / C#</span>
+                        <span>Entity Framework</span>
+                        <span>LINQ</span>
+                        <span>SQL Server</span>
+                        <span>MySQL</span>
+                        <span>Intersystems IRIS</span>
+                        <span>ObjectScript</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h4>Herramientas & Cloud</h4>
+                    <div class="tags">
+                        <span>Git</span>
+                        <span>GitLab</span>
+                        <span>Azure</span>
+                        <span>SharePoint</span>
+                        <span>Jira</span>
+                        <span>Postman</span>
+                        <span>Kibana</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="languages-section">
+                <h3><i class="fas fa-globe"></i> Idiomas</h3>
+                <ul>
+                    <li><strong>Español:</strong> Nativo</li>
+                    <li><strong>Inglés:</strong> Competencia Profesional</li>
+                </ul>
+            </section>
+
+            <section class="interests-section">
+                <h3><i class="fas fa-star"></i> Intereses</h3>
+                <p>Deporte, ciencia, economía y nuevas tecnologías.</p>
+            </section>
+        </aside>
+
+        <main class="main-content">
+            <section class="summary">
+                <h3><i class="fas fa-user"></i> Perfil Profesional</h3>
+                <p>
+                    Desarrollador Full Stack con más de 3 años de experiencia en el ciclo completo de desarrollo de
+                    software.
+                    Especializado en la creación y mantenimiento de aplicaciones web complejas.
+                    Diseño de APIs y gestión de bases de datos, además de buenas capacidades para la resolución de
+                    incidencias.
+                    Me considero una persona constante, comunicativa y motivada por los retos técnicos que impulsan mi
+                    crecimiento profesional.
+                </p>
+            </section>
+
+            <section class="experience">
+                <h3><i class="fas fa-briefcase"></i> Experiencia Laboral</h3>
+
+                <div class="job-item">
+                    <div class="job-header">
+                        <h4>Desarrollador Full Stack</h4>
+                        <span class="company">Salutic S.L.</span>
+                        <span class="date">Marzo 2022 - Actualidad</span>
+                    </div>
+                    <div class="job-details">
+                        <div class="project-highlight">
+                            <h5>Proyecto Staffy (Fichaje Laboral)</h5>
+                            <span class="project-date">Oct 2025 - Dic 2025</span>
+                            <p>Desarrollo integral de una aplicación de gestión de fichajes y control horario.</p>
+                            <ul>
+                                <li>Implementación del frontend con <strong>Angular 13</strong>.</li>
+                                <li>Desarrollo del backend utilizando <strong>.NET</strong>, <strong>LINQ</strong> y
+                                    <strong>Entity Framework</strong>.
+                                </li>
+                                <li>Diseño y gestión de base de datos <strong>MySQL</strong>.</li>
+                            </ul>
+                        </div>
+                        <div class="project-highlight">
+                            <h5>Plataforma de Gestión de Datos Sanitarios</h5>
+                            <span class="project-date">Mar 2022 - Oct 2025</span>
+                            <p>Administración y evolución de plataforma de interoperabilidad para el sector de seguros
+                                médicos.</p>
+                            <ul>
+                                <li>Mantenimiento y desarrollo de nuevas funcionalidades en plataforma CMS.</li>
+                                <li>Gestión de datos con <strong>Intersystems IRIS</strong> y <strong>SQL</strong>.</li>
+                                <li>Desarrollo frontend con <strong>jQuery</strong> y resolución de incidencias de
+                                    usuarios.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="job-item">
+                    <div class="job-header">
+                        <h4>Desarrollador Frontend</h4>
+                        <span class="company">Bimaxpro S.L.</span>
+                        <span class="date">Nov 2021 - Feb 2022</span>
+                    </div>
+                    <div class="job-details">
+                        <p>Desarrollo de aplicación web para la gestión y envío de pruebas sanitarias en el sector
+                            logístico-pesquero.</p>
+                        <ul>
+                            <li>Optimización de flujos de trabajo para procesamiento de datos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="education">
+                <h3><i class="fas fa-graduation-cap"></i> Educación</h3>
+
+                <div class="edu-item">
+                    <div class="edu-header">
+                        <h4>Frontend Máster</h4>
+                        <span class="institution">Lemoncode</span>
+                    </div>
+                    <span class="edu-date">Sep 2020 - May 2021</span>
+                </div>
+
+                <div class="edu-item">
+                    <div class="edu-header">
+                        <h4>Bootcamp Javascript</h4>
+                        <span class="institution">Lemoncode</span>
+                    </div>
+                    <span class="edu-date">Mar 2020 - Oct 2020</span>
+                </div>
+
+                <div class="edu-item">
+                    <div class="edu-header">
+                        <h4>Bachillerato de Artes</h4>
+                    </div>
+                    <span class="edu-date">2002 - 2004</span>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
