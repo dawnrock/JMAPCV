@@ -15,10 +15,8 @@ const Hero = () => {
                     <h1>Jose Manuel<br />Alba Peña</h1>
                     <h2>Desarrollador Full Stack</h2>
                     <p>
-                        Desarrollador Full Stack con más de 3 años de experiencia en el ciclo completo de desarrollo de software.
-                        Especializado en la creación y mantenimiento de aplicaciones web complejas.
-                        Diseño de APIs y gestión de bases de datos, además de buenas capacidades para la resolución de incidencias.
-                        Me considero una persona constante, comunicativa y motivada por los retos técnicos que impulsan mi crecimiento profesional.
+                        Me considero una persona constante, comunicativa y motivada por los retos
+                        técnicos que impulsan mi crecimiento profesional.
                     </p>
                     <div className="hero-buttons">
                         <button onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })} className="btn primary">
