@@ -22,7 +22,7 @@ const Hero = () => {
                         <button onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })} className="btn primary">
                             Contactar
                         </button>
-                        <button onClick={() => window.open('/cv.pdf', '_blank')} className="btn secondary">
+                        <button onClick={() => window.open('/cv.html', '_blank')} className="btn secondary">
                             <i className="fas fa-download"></i> Descargar CV
                         </button>
                     </div>
