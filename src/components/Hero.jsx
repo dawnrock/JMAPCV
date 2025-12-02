@@ -24,9 +24,9 @@ const Hero = () => {
                         <button onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })} className="btn primary">
                             Contactar
                         </button>
-                        <button onClick={() => window.open('/CV.pdf', '_blank')} className="btn secondary">
+                        <a href="/CV.pdf" download className="btn secondary">
                             <i className="fas fa-download"></i> Descargar CV
-                        </button>
+                        </a>
                     </div>
                 </motion.div>
 
