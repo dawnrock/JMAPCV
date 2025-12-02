@@ -30,7 +30,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  background: radial-gradient(circle at top right, #1a0f2e 0%, #0a0118 40%);
+  background: radial-gradient(circle at top left, #1a0f2e 0%, #0a0118 40%);
 }
 
 .app-container {
@@ -48,7 +48,7 @@ body {
 }
 
 .section-padding {
-  padding: 50px 0;
+  padding: 24px 0;
 }
 
 h1,
@@ -213,7 +213,7 @@ h5 {
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid var(--border);
-  box-shadow: 0 0 30px rgba(132, 204, 22, 0.4), 0 0 60px var(--accent-glow);
+  box-shadow: 0 0 30px rgba(89, 31, 155, 0.4), 0 0 60px var(--accent-glow);
   position: relative;
 }
 

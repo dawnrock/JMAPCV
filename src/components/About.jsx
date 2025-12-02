@@ -16,12 +16,9 @@ const About = () => {
                     <p>
                         Desarrollador Full Stack con más de 3 años de experiencia en el ciclo completo de desarrollo de
                         software. Especializado en la creación y mantenimiento de aplicaciones web complejas.
+                        <br />
                         Diseño de APIs y gestión de bases de datos, además de buenas capacidades para la resolución de
                         incidencias.
-                    </p>
-                    <p>
-                        Me considero una persona constante, comunicativa y motivada por los retos técnicos que impulsan mi
-                        crecimiento profesional.
                     </p>
                 </div>
             </motion.div>
