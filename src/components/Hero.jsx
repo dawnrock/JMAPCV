@@ -12,7 +12,7 @@ const Hero = () => {
                     transition={{ duration: 0.8 }}
                 >
                     <span className="greeting">Hola, soy</span>
-                    <h1>Jose Manuel<br />Alba Peña</h1>
+                    <h1>José Manuel<br />Alba Peña</h1>
                     <h2>Desarrollador Full Stack</h2>
                     <p>
                         Me considero una persona constante, comunicativa y motivada por los retos
