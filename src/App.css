@@ -473,6 +473,15 @@ h5 {
     justify-content: center;
   }
 
+  .hero-text p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-section {
+    padding-bottom: 80px;
+  }
+
   .timeline::before {
     left: 20px;
   }
