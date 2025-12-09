@@ -13,7 +13,7 @@ const Hero = () => {
                 >
                     <span className="greeting">Hola, soy</span>
                     <h1>José Manuel<br />Alba Peña</h1>
-                    <h2>Desarrollador Full Stack</h2>
+                    <h2>Desarrollador <br />Full Stack</h2>
                     <p>
                         Me considero una persona constante, comunicativa y motivada por los retos
                         técnicos que impulsan mi crecimiento profesional.
