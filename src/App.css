@@ -204,7 +204,7 @@ h5 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: -280px;
 }
 
 .image-wrapper {
@@ -467,6 +467,7 @@ h5 {
     align-items: center;
     order: -1;
     margin-bottom: 12px;
+    margin-top: 20px;
   }
 
 
