@@ -1,0 +1,382 @@
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #3498db;
+    --text-color: #333;
+    --text-light: #666;
+    --bg-sidebar: #f4f7f6;
+    --bg-main: #ffffff;
+    --border-color: #e0e0e0;
+    --spacing-unit: 1.5rem;
+    /* Reducido para ajustar a una página */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    background-color: #e9ecef;
+    /* Fondo gris para la vista web */
+    line-height: 1.45;
+    /* Reducido ligeramente */
+    font-size: 12px;
+    /* Reducido para ajustar */
+}
+
+/* Contenedor principal estilo "Hoja de Papel" */
+.cv-container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    max-width: 210mm;
+    /* A4 width */
+    min-height: 300mm;
+    max-height: 300mm;
+    /* A4 height */
+    margin: 2rem auto;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--spacing-unit);
+    text-align: center;
+    height: 100%;
+    /* Centrar contenido sidebar */
+}
+
+.profile-photo {
+    margin-bottom: 1rem;
+}
+
+.profile-photo img {
+    width: 120px;
+    /* Más pequeño */
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile-header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 0.3rem;
+    color: white;
+}
+
+.profile-header h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-info {
+    margin-bottom: 1.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Centrar items de contacto */
+    margin-bottom: 0.6rem;
+    font-size: 0.9rem;
+}
+
+.contact-item i {
+    width: 20px;
+    margin-right: 10px;
+    color: var(--accent-color);
+}
+
+.contact-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar h3 {
+    font-size: 1rem;
+    border-bottom: 1px solid var(--accent-color);
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.8rem;
+    margin-top: 1.5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Centrar títulos sidebar */
+}
+
+.sidebar h3 i {
+    margin-right: 10px;
+    font-size: 0.9rem;
+}
+
+.skill-group {
+    margin-bottom: 1rem;
+}
+
+.skill-group h4 {
+    font-size: 0.85rem;
+    color: #bdc3c7;
+    margin-bottom: 0.3rem;
+    text-transform: uppercase;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+    /* Centrar tags */
+}
+
+.tags span {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.languages-section ul {
+    list-style: none;
+}
+
+.languages-section li {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Main Content */
+.main-content {
+    padding: var(--spacing-unit) 2.5rem;
+    background-color: var(--bg-main);
+}
+
+.main-content h3 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.main-content h3:first-of-type {
+    margin-top: 0;
+}
+
+.main-content h3 i {
+    margin-right: 12px;
+    color: var(--accent-color);
+}
+
+.summary p {
+    color: var(--text-light);
+    text-align: justify;
+    padding-bottom: 1rem;
+}
+
+.job-item {
+    margin-bottom: 1.5rem;
+}
+
+.job-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.3rem;
+}
+
+.job-header h4 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    width: 100%;
+}
+
+.company {
+    font-weight: 600;
+    color: var(--accent-color);
+    font-size: 1rem;
+}
+
+.date {
+    color: #888;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.project-highlight {
+    background: #f8f9fa;
+    padding: 0.8rem;
+    border-left: 3px solid var(--accent-color);
+    margin: 0.8rem 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.project-highlight h5 {
+    color: var(--primary-color);
+    font-size: 0.95rem;
+    margin-bottom: 0.2rem;
+}
+
+.project-date {
+    font-size: 0.8rem;
+    color: #666;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.job-details ul {
+    margin-left: 1.2rem;
+    margin-top: 0.5rem;
+    color: var(--text-light);
+}
+
+.job-details li {
+    margin-bottom: 0.2rem;
+}
+
+.edu-item {
+    margin-bottom: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.edu-header h4 {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+}
+
+.institution {
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.edu-date {
+    color: #888;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    margin-left: 1rem;
+}
+
+/* Print Controls */
+.print-controls {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.btn-print {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-print:hover {
+    background: #2980b9;
+}
+
+.print-hint {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .cv-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+    }
+
+    .sidebar {
+        padding: 2rem;
+    }
+
+    .main-content {
+        padding: 2rem;
+    }
+}
+
+@media print {
+    body {
+        background: white;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .print-controls {
+        display: none !important;
+    }
+
+    .cv-container {
+        margin: 0;
+        box-shadow: none;
+        width: 100%;
+        max-width: none;
+        grid-template-columns: 280px 1fr;
+        /* Mantener 2 columnas en print */
+        min-height: auto;
+    }
+
+    .sidebar {
+        background-color: var(--primary-color) !important;
+        color: white !important;
+        -webkit-print-color-adjust: exact;
+    }
+
+    .project-highlight {
+        break-inside: avoid;
+        background-color: #f8f9fa !important;
+        -webkit-print-color-adjust: exact;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    /* Asegurar que los iconos se vean si es posible, o usar texto alternativo */
+    i {
+        color: var(--accent-color) !important;
+        -webkit-print-color-adjust: exact;
+    }
+
+    @page {
+        margin: 0;
+        size: A4;
+    }
+
+    /* Forzar ajuste si es necesario */
+    .main-content,
+    .sidebar {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+}
