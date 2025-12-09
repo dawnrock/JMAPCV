@@ -15,10 +15,10 @@ const About = () => {
                 <div className="about-content">
                     <p>
                         Desarrollador Full Stack con más de 4 años de experiencia en el ciclo completo de desarrollo de
-                        software. Especializado en la creación y mantenimiento de aplicaciones web complejas.
+                        software.
+                        Especializado en el desarrollo de aplicaciones web, diseño de APIs y gestión de bases de datos.
                         <br />
-                        Diseño de APIs y gestión de bases de datos, además de buenas capacidades para la resolución de
-                        incidencias.
+                        Además de buenas capacidades para la resolución de incidencias.
                     </p>
                 </div>
             </motion.div>
