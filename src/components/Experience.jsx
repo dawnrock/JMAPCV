@@ -45,7 +45,7 @@ const Experience = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
             >
-                Experiencia Laboral
+                <i className="fas fa-briefcase" style={{ marginRight: '10px' }}></i>Experiencia Laboral
             </motion.h2>
 
             <div className="timeline">

@@ -5,6 +5,9 @@ import About from './components/About';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
+import IA from './components/IA';
+import Horizonte from './components/Horizonte';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -17,9 +20,12 @@ function App() {
           <About />
           <Experience />
           <Skills />
+          <Horizonte />
+          <IA />
+          <Contact />
         </div>
       </div>
-      <Contact />
+      <Footer />
     </div>
   );
 }

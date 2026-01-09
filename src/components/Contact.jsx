@@ -11,7 +11,7 @@ const Contact = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
             >
-                <h2>¿Hablamos?</h2>
+                <h2><i className="fas fa-envelope" style={{ marginRight: '10px' }}></i>¿Hablamos?</h2>
                 <p>Estoy disponible para nuevos retos y oportunidades profesionales.</p>
 
                 <div className="contact-links">

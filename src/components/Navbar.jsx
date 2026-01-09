@@ -28,10 +28,12 @@ const Navbar = () => {
         >
             <div className="nav-container">
                 <ul className="nav-links">
-                    <li onClick={() => scrollToSection('about')}>Sobre mí</li>
-                    <li onClick={() => scrollToSection('experience')}>Experiencia</li>
-                    <li onClick={() => scrollToSection('skills')}>Skills</li>
-                    <li onClick={() => scrollToSection('contact')}>Contacto</li>
+                    <li onClick={() => scrollToSection('about')}><i className="fas fa-user"></i> Sobre mí</li>
+                    <li onClick={() => scrollToSection('ia')}><i className="fas fa-robot"></i> IA</li>
+                    <li onClick={() => scrollToSection('experience')}><i className="fas fa-briefcase"></i> Experiencia</li>
+                    <li onClick={() => scrollToSection('skills')}><i className="fas fa-code"></i> Skills</li>
+                    <li onClick={() => scrollToSection('horizonte')}><i className="fas fa-rocket"></i> Proyección</li>
+                    <li onClick={() => scrollToSection('contact')}><i className="fas fa-envelope"></i> Contacto</li>
                 </ul>
             </div>
         </motion.nav>

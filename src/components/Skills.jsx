@@ -2,6 +2,34 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const Skills = () => {
+    // Technology URL mappings
+    const techUrls = {
+        // Frontend
+        "Angular 13+": "https://angular.io/",
+        "React": "https://react.dev/",
+        "JavaScript (ES6+)": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        "HTML5/CSS3": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+        "jQuery": "https://jquery.com/",
+        // Backend
+        ".NET Core / C#": "https://dotnet.microsoft.com/",
+        "Entity Framework": "https://docs.microsoft.com/en-us/ef/",
+        "SQL Server": "https://www.microsoft.com/en-us/sql-server",
+        "MySQL": "https://www.mysql.com/",
+        "Intersystems IRIS": "https://www.intersystems.com/products/intersystems-iris/",
+        // Tools & Cloud
+        "Git / GitLab": "https://about.gitlab.com/",
+        "Azure": "https://azure.microsoft.com/",
+        "Jira": "https://www.atlassian.com/software/jira",
+        "Postman": "https://www.postman.com/",
+        "Kibana": "https://www.elastic.co/kibana",
+        // AI
+        "GitHub Copilot": "https://github.com/features/copilot",
+        "Google NotebookLM": "https://notebooklm.google.com/",
+        "AI Agents (Antigravity)": "https://deepmind.google/",
+        "ChatGPT": "https://openai.com/chatgpt",
+        "Claude": "https://www.anthropic.com/claude"
+    };
+
     const skillCategories = [
         {
             title: "Frontend",
@@ -17,6 +45,11 @@ const Skills = () => {
             title: "Tools & Cloud",
             icon: "fa-cloud",
             skills: ["Git / GitLab", "Azure", "Jira", "Postman", "Kibana"]
+        },
+        {
+            title: "Inteligencia Artificial",
+            icon: "fa-robot",
+            skills: ["GitHub Copilot", "Google NotebookLM", "AI Agents (Antigravity)", "ChatGPT", "Claude"]
         }
     ];
 
@@ -43,7 +76,7 @@ const Skills = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
             >
-                Habilidades Técnicas
+                <i className="fas fa-code" style={{ marginRight: '10px' }}></i>Habilidades Técnicas
             </motion.h2>
 
             <motion.div
@@ -61,7 +94,15 @@ const Skills = () => {
                         <h3>{category.title}</h3>
                         <div className="skill-tags">
                             {category.skills.map((skill, i) => (
-                                <span key={i} className="tag">{skill}</span>
+                                <a
+                                    key={i}
+                                    href={techUrls[skill]}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="tag tag-link"
+                                >
+                                    {skill}
+                                </a>
                             ))}
                         </div>
                     </motion.div>

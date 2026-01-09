@@ -38,6 +38,20 @@ body {
   flex-direction: column;
   width: 100%;
   overflow-x: hidden;
+  min-height: 100vh;
+  /* Separación entre elementos del contenedor */
+
+  /* Textured Background (Chromatic Family) */
+  background-color: var(--bg-dark);
+  background-image:
+    radial-gradient(circle at 20% 40%, rgba(192, 38, 211, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 80% 20%, rgba(99, 102, 241, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 50% 80%, rgba(34, 211, 238, 0.1) 0%, transparent 40%),
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 50px 50px, 50px 50px;
+  background-attachment: fixed;
+  /* Parallax-like feel */
 }
 
 /* Utilities */
@@ -165,38 +179,48 @@ h5 {
 }
 
 .btn {
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-weight: 600;
+  padding: 12px 30px;
+  /* Slight increase */
+  border-radius: 50px;
+  /* Rounded pill shape for modern look */
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
   font-size: 1rem;
-  border: none;
+  border: 1px solid rgba(192, 38, 211, 0.3);
+  /* Subtle border */
+  background: rgba(255, 255, 255, 0.03);
+  /* Very subtle fill */
+  color: var(--text-primary);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
-.btn.primary {
-  background: linear-gradient(135deg, var(--accent) 0%, #a21caf 100%);
-  color: white;
-  box-shadow: 0 0 20px var(--accent-glow);
-}
-
-.btn.primary:hover {
+.btn:hover {
+  background: rgba(192, 38, 211, 0.1);
+  border-color: var(--accent);
   transform: translateY(-2px);
-  box-shadow: 0 0 30px var(--accent-glow);
-  background: linear-gradient(135deg, #d946ef 0%, var(--accent) 100%);
+  box-shadow: 0 5px 15px rgba(192, 38, 211, 0.2);
 }
 
+/* Unified style, so primary/secondary distinction is minimal or removed for visual uniformity */
+.btn.primary,
 .btn.secondary {
-  background: transparent;
-  border: 2px solid var(--accent);
-  color: var(--accent);
+  /* Inherit base .btn styles */
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text-primary);
+  box-shadow: none;
 }
 
+.btn.primary:hover,
 .btn.secondary:hover {
-  background: var(--accent);
+  background: rgba(192, 38, 211, 0.15);
+  border-color: var(--text-secondary);
   color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 0 20px var(--accent-glow);
+  box-shadow: 0 0 20px rgba(192, 38, 211, 0.3);
 }
 
 .hero-image {
@@ -355,18 +379,29 @@ h5 {
   border-radius: 4px;
 }
 
-/* Skills Grid */
+
+/* Navbar Icon Spacing */
+.nav-links i {
+  margin-right: 8px;
+}
+
+/* Skills Grid Fix */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
   max-width: 1200px;
+  /* Keep this max-width for the grid itself */
+  width: 100%;
   margin: 0 auto;
+  padding: 0 20px;
+  /* Add padding equal to gap */
 }
 
 .skill-card {
   background: var(--bg-card);
-  padding: 40px;
+  padding: 20px;
+  /* Reduced from 40px to fit 4 cols */
   border-radius: 15px;
   border: 1px solid var(--border);
   text-align: center;
@@ -380,44 +415,194 @@ h5 {
 }
 
 .card-icon {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  /* Reduced size */
   color: var(--accent);
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .skill-tags {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
-  margin-top: 20px;
+  gap: 8px;
+  margin-top: 15px;
 }
 
 .tag {
   background: rgba(192, 38, 211, 0.15);
-  padding: 5px 12px;
+  padding: 4px 10px;
   border-radius: 20px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--text-secondary);
   border: 1px solid rgba(192, 38, 211, 0.3);
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
 }
 
-/* Contact */
+.tag-link {
+  cursor: pointer;
+}
+
+.tag-link:hover {
+  background: rgba(192, 38, 211, 0.25);
+  border-color: var(--accent);
+  color: var(--text-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(192, 38, 211, 0.3);
+}
+
+/* Contact (Restored) */
 .contact-section {
   text-align: center;
-  margin-top: 16px;
-  background: linear-gradient(to bottom, #0a0118, #1a0f2e);
 }
 
 .contact-container h2 {
-  font-size: 3rem;
+  font-size: 2rem;
+  /* Reduced to match other sections */
   margin-bottom: 20px;
+}
+
+/* Section Differentiation with uniform gradient glow (box-shadow) */
+#about,
+#about,
+#ia,
+#experience,
+#skills,
+#horizonte,
+#contact {
+  max-width: 1000px;
+  width: 100%;
+  /* Force full width up to max */
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(10, 1, 24, 0.7);
+  /* Neutral dark */
+  backdrop-filter: blur(5px);
+  border: 1px solid transparent;
+  border-radius: 20px;
+  /* Smooth transition for background and shadow */
+  transition: background 0.6s ease, box-shadow 0.6s ease, border-color 0.6s ease;
+
+  /* Fix navbar overlap on scroll */
+  scroll-margin-top: 100px;
+
+  /* Add significant spacing between sections */
+  margin-bottom: 60px;
+  /* Half of original 120px for web */
+}
+
+#about:hover {
+  background: transparent;
+  box-shadow: 0 0 20px 2px rgba(192, 38, 211, 0.4);
+  border-color: rgba(192, 38, 211, 0.3);
+}
+
+#ia:hover {
+  background: transparent;
+  /* Silver/Platinum (Sleek, High-Tech, fits Purple/Cyan family) */
+  box-shadow: 0 0 20px 2px rgba(226, 232, 240, 0.5);
+  border-color: rgba(226, 232, 240, 0.4);
+}
+
+#experience:hover {
+  background: transparent;
+  box-shadow: 0 0 20px 2px rgba(167, 139, 250, 0.4);
+  border-color: rgba(167, 139, 250, 0.3);
+}
+
+#skills:hover {
+  background: transparent;
+  /* Softer Pink/Red */
+  box-shadow: 0 0 20px 2px rgba(249, 168, 212, 0.4);
+  border-color: rgba(249, 168, 212, 0.3);
+}
+
+#horizonte:hover {
+  background: transparent;
+  /* Cool Cyan/Teal (Cooler tone within chromatic family) */
+  box-shadow: 0 0 20px 2px rgba(34, 211, 238, 0.5);
+  border-color: rgba(34, 211, 238, 0.4);
+}
+
+#contact:hover {
+  background: transparent;
+  box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+/* Footer Styles */
+.footer {
+  width: 100%;
+  background: rgba(10, 1, 24, 0.9);
+  border-top: 1px solid rgba(192, 38, 211, 0.2);
+  padding: 40px 20px 30px;
+  margin-top: 10px;
+  /* Match section spacing */
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-title {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.tech-stack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.tech-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(192, 38, 211, 0.2);
+  border-radius: 25px;
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.tech-link:hover {
+  background: rgba(192, 38, 211, 0.1);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(192, 38, 211, 0.3);
+}
+
+.tech-link i {
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+
+.footer-copyright {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  opacity: 0.7;
 }
 
 .contact-links {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 80px;
+  /* Increased spacing for desktop */
   margin-top: 40px;
   margin-bottom: 60px;
 }
@@ -427,7 +612,7 @@ h5 {
   align-items: center;
   gap: 10px;
   padding: 15px 30px;
-  background: var(--bg-card);
+  background: rgba(255, 255, 255, 0.03);
   color: var(--text-primary);
   text-decoration: none;
   border-radius: 50px;
@@ -442,16 +627,46 @@ h5 {
   box-shadow: 0 5px 20px var(--accent-glow);
 }
 
-/* Responsive */
+/* Skills Grid Responsiveness (Restored) */
+@media (max-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile Overrides */
 @media (max-width: 768px) {
-  .about-container h2 {
-    margin-bottom: 0.5rem;
+
+  /* 1. Navbar Visibility */
+  .navbar {
+    display: none;
+    /* Hide entire navbar on mobile as per request "cuando antes no" / "ponla en un lateral" (defaulting to hidden for now to restore state) */
   }
 
-  .about-content p {
-    margin-bottom: 0rem;
+  /* 2. Section Widths - Full width on mobile */
+  #about,
+  #ia,
+  #experience,
+  #skills,
+  #horizonte,
+  #contact {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    /* Remove persistent hover effects - let them trigger on touch (:hover/:active) naturally */
+
+    /* Reduce spacing on mobile to 30px (half of desktop 60px) */
+    margin-bottom: 30px;
   }
 
+  /* 3. Hero Layout (Restored) */
   .hero-content {
     grid-template-columns: 1fr;
     text-align: center;
@@ -470,6 +685,10 @@ h5 {
     margin-top: 20px;
   }
 
+  .image-wrapper {
+    width: 180px;
+    height: 180px;
+  }
 
   .hero-text h1 {
     font-size: 2.5rem;
@@ -486,7 +705,6 @@ h5 {
   }
 
   .hero-text p {
-    margin-top: 18px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 24px;
@@ -494,8 +712,10 @@ h5 {
 
   .hero-section {
     padding-bottom: 64px;
+    flex-direction: column;
   }
 
+  /* 4. Experience Timeline (Restored) */
   .timeline::before {
     left: 20px;
   }
@@ -513,20 +733,68 @@ h5 {
     margin-right: 0;
   }
 
-  .nav-links {
-    display: none;
-    /* Simple hide for mobile for now, could add hamburger */
+  .timeline-content .date {
+    position: relative;
+    top: auto;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .project-card>div {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .project-card h5 {
+    margin-bottom: 5px !important;
+  }
+
+  .project-card span {
+    white-space: normal !important;
+    margin-left: 0 !important;
+  }
+
+  /* 5. Typography & Spacing */
+  .about-container h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .about-content p {
+    margin-bottom: 0rem;
   }
 
   .contact-links {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    width: 100%;
+    /* Ensure container doesn't overflow */
   }
 
   .contact-btn {
     width: 100%;
+    /* Take full width of container */
+    max-width: 300px;
+    /* Optional: limit max width for aesthetics */
     justify-content: center;
+    box-sizing: border-box;
+    /* Include padding in width */
+    padding: 12px 15px;
+    /* Reduce horizontal padding slightly */
+    white-space: normal;
+    /* Allow wrapping */
+    word-break: break-word;
+    /* Break long words/emails if necessary */
+    font-size: 0.9rem;
+    /* Slightly smaller font for mobile safety */
+  }
+
+  .scroll-indicator {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    margin-top: 30px;
   }
 
   .section-padding {
@@ -537,5 +805,4 @@ h5 {
   .section-title {
     margin-bottom: 2rem;
   }
-
 }
