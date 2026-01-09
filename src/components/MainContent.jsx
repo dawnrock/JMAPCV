@@ -27,7 +27,7 @@ const MainContent = () => {
                     </div>
                     <div className="job-details">
                         <div className="project-highlight">
-                            <h5>Proyecto Staffy (Fichaje Laboral)</h5>
+                            <h5>Proyecto fichaje Laboral</h5>
                             <span className="project-date">Oct 2025 - Dic 2025</span>
                             <p>Desarrollo integral de una aplicación de gestión de fichajes y control horario.</p>
                             <ul>
