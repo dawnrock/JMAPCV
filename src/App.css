@@ -79,6 +79,7 @@ h5 {
   margin-bottom: 3rem;
   background: linear-gradient(to right, #fff, var(--text-secondary));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -127,6 +128,105 @@ h5 {
   color: var(--accent);
 }
 
+.mobile-menu-btn {
+  display: none;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  cursor: pointer;
+  z-index: 1001;
+  padding: 10px;
+  background: rgba(192, 38, 211, 0.1);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-btn:hover {
+  background: rgba(192, 38, 211, 0.2);
+  border-color: var(--accent);
+}
+
+/* Mobile Sidebar */
+.mobile-sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 1002;
+}
+
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 280px;
+  height: 100vh;
+  background: var(--bg-card);
+  border-left: 1px solid var(--border);
+  z-index: 1003;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar-header {
+  margin-bottom: 40px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 15px;
+}
+
+.sidebar-header h3 {
+  font-size: 1.5rem;
+  background: linear-gradient(to right, #fff, var(--text-secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sidebar-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  flex: 1;
+}
+
+.sidebar-links li {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.sidebar-links li i {
+  width: 25px;
+  color: var(--accent);
+}
+
+.sidebar-links li:active {
+  background: rgba(192, 38, 211, 0.1);
+  color: var(--text-primary);
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  border-top: 1px solid var(--border);
+  padding-top: 20px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  opacity: 0.6;
+  text-align: center;
+}
+
 /* Hero Section */
 .hero-section {
   min-height: 100vh;
@@ -134,7 +234,7 @@ h5 {
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: 0 20px;
+  padding: 5px 20px;
 }
 
 .hero-content {
@@ -658,13 +758,28 @@ h5 {
   }
 }
 
-/* Mobile Overrides */
 @media (max-width: 768px) {
 
   /* 1. Navbar Visibility */
   .navbar {
+    display: block;
+    background: transparent;
+    padding: 15px 0;
+  }
+
+  .nav-container {
+    justify-content: flex-end;
+    padding: 0 20px;
+  }
+
+  .nav-links {
     display: none;
-    /* Hide entire navbar on mobile as per request "cuando antes no" / "ponla en un lateral" (defaulting to hidden for now to restore state) */
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   /* 2. Section Widths - Full width on mobile */
@@ -727,7 +842,7 @@ h5 {
   }
 
   .hero-section {
-    padding-bottom: 64px;
+    padding-bottom: 32px;
     flex-direction: column;
   }
 
