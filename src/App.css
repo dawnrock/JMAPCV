@@ -672,7 +672,6 @@ h5 {
     text-align: center;
     display: grid;
     grid-template-rows: auto 1fr;
-    gap: 20px;
   }
 
   .hero-image {
@@ -686,8 +685,8 @@ h5 {
   }
 
   .image-wrapper {
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
   }
 
   .hero-text h1 {
