@@ -371,12 +371,30 @@ h5 {
   gap: 8px;
 }
 
-.tech-tags span {
+.tech-tags span,
+.tech-tag-link {
   font-size: 0.75rem;
   background: rgba(56, 189, 248, 0.1);
   color: var(--accent);
   padding: 2px 8px;
   border-radius: 4px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.tech-tag-link {
+  border: 1px solid rgba(192, 38, 211, 0.2);
+  cursor: pointer;
+}
+
+.tech-tag-link:hover {
+  background: rgba(192, 38, 211, 0.2);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px var(--accent-glow);
+  color: var(--text-primary);
 }
 
 

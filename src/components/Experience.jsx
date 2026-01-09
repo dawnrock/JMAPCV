@@ -2,6 +2,21 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const Experience = () => {
+    // Mapping of technologies to their official documentation URLs
+    const techDocs = {
+        ".NET": "https://learn.microsoft.com/es-es/dotnet/",
+        "LINQ": "https://learn.microsoft.com/es-es/dotnet/csharp/linq/",
+        "Entity Framework": "https://learn.microsoft.com/es-es/ef/",
+        "MySQL": "https://dev.mysql.com/doc/",
+        "Angular 13": "https://v13.angular.io/docs",
+        "Angular 12": "https://v12.angular.io/docs",
+        "Intersystems IRIS": "https://docs.intersystems.com/iris/latest/",
+        "ObjectScript": "https://docs.intersystems.com/iris/latest/csp/docbook/DocBook.UI.Page.cls",
+        "SQL Server": "https://learn.microsoft.com/es-es/sql/sql-server/",
+        "jQuery": "https://api.jquery.com/",
+        "PostgreSQL": "https://www.postgresql.org/docs/"
+    };
+
     const jobs = [
         {
             title: "Desarrollador Full Stack",
@@ -74,7 +89,23 @@ const Experience = () => {
                                             </div>
                                             <p>{proj.desc}</p>
                                             <div className="tech-tags">
-                                                {proj.tech.map((t, k) => <span key={k}>{t}</span>)}
+                                                {proj.tech.map((t, k) => {
+                                                    const docUrl = techDocs[t];
+                                                    return docUrl ? (
+                                                        <a
+                                                            key={k}
+                                                            href={docUrl}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            className="tech-tag-link"
+                                                            title={`Ver documentación de ${t}`}
+                                                        >
+                                                            {t}
+                                                        </a>
+                                                    ) : (
+                                                        <span key={k}>{t}</span>
+                                                    );
+                                                })}
                                             </div>
                                         </div>
                                     ))}
