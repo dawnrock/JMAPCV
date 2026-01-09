@@ -686,22 +686,21 @@ h5 {
   }
 
   .image-wrapper {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
   }
 
   .hero-text h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .hero-text h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-bottom: 8px;
   }
 
   .hero-buttons {
     justify-content: center;
-    margin-top: 24px;
   }
 
   .hero-text p {
@@ -794,7 +793,6 @@ h5 {
     bottom: auto;
     left: auto;
     transform: none;
-    margin-top: 30px;
   }
 
   .section-padding {
