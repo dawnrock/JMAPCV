@@ -24,7 +24,7 @@ const Experience = () => {
             description: "Desarrollo integral de aplicaciones de gestión sanitaria y control horario.",
             projects: [
                 {
-                    name: "Proyecto Fichaje Laboral",
+                    name: "Proyecto Staffy (Fichaje Laboral)",
                     date: "Oct 2025 - Actualidad",
                     tech: [".NET", "LINQ", "Entity Framework", "MySQL", "Angular 13"],
                     desc: "Desarrollo integral de aplicación web dedicada a la gestión de fichajes y control horario."
