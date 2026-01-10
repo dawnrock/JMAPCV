@@ -1,7 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+    const { t } = useTranslation();
+
     return (
         <section id="contact" className="section-padding contact-section">
             <motion.div
@@ -11,8 +14,8 @@ const Contact = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
             >
-                <h2><i className="fas fa-envelope" style={{ marginRight: '10px' }}></i>¿Hablamos?</h2>
-                <p>Estoy disponible para nuevos retos y oportunidades profesionales.</p>
+                <h2><i className="fas fa-envelope" style={{ marginRight: '10px' }}></i>{t('contact.title')}</h2>
+                <p>{t('contact.subtitle')}</p>
 
                 <div className="contact-links">
                     <a href="mailto:manualbadj@gmail.com" className="contact-btn">

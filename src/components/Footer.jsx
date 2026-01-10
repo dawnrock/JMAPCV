@@ -1,6 +1,8 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+    const { t } = useTranslation();
     const technologies = [
         { name: 'React', url: 'https://react.dev/', icon: 'fa-react', iconClass: 'fab' },
         { name: 'Vite', url: 'https://vitejs.dev/', icon: 'fa-bolt-lightning', iconClass: 'fas' },
@@ -11,7 +13,7 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-content">
-                <p className="footer-title">Construido con</p>
+                <p className="footer-title">{t('footer.built_with')}</p>
                 <div className="tech-stack">
                     {technologies.map((tech, index) => (
                         <a

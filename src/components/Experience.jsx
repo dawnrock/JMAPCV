@@ -1,7 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const Experience = () => {
+    const { t } = useTranslation();
+
     // Mapping of technologies to their official documentation URLs
     const techDocs = {
         ".NET": "https://learn.microsoft.com/es-es/dotnet/",
@@ -19,34 +22,34 @@ const Experience = () => {
 
     const jobs = [
         {
-            title: "Desarrollador Full Stack",
+            title: t('experience.jobs.salutic.title'),
             company: "Salutic S.L.",
-            description: "Desarrollo integral de aplicaciones de gestión sanitaria y control horario.",
+            description: t('experience.jobs.salutic.description'),
             projects: [
                 {
-                    name: "Proyecto Staffy (Fichaje Laboral)",
-                    date: "Oct 2025 - Actualidad",
+                    name: t('experience.jobs.salutic.p1.name'),
+                    date: t('experience.jobs.salutic.p1.date'),
                     tech: [".NET", "LINQ", "Entity Framework", "MySQL", "Angular 13"],
-                    desc: "Desarrollo integral de aplicación web dedicada a la gestión de fichajes y control horario."
+                    desc: t('experience.jobs.salutic.p1.desc')
                 },
                 {
-                    name: "Plataforma de Gestión de Datos Sanitarios",
-                    date: "Mar 2022 - Oct 2025",
+                    name: t('experience.jobs.salutic.p2.name'),
+                    date: t('experience.jobs.salutic.p2.date'),
                     tech: ["Intersystems IRIS", ".NET", "ObjectScript", "SQL Server", "jQuery"],
-                    desc: "Administración de plataforma de interoperabilidad para el sector de seguros médicos."
+                    desc: t('experience.jobs.salutic.p2.desc')
                 }
             ]
         },
         {
-            title: "Desarrollador Frontend",
+            title: t('experience.jobs.bimaxpro.title'),
             company: "Bimaxpro S.L.",
-            description: "Desarrollo de aplicación web para la gestión y envío de pruebas sanitarias en el sector logístico-pesquero.",
+            description: t('experience.jobs.bimaxpro.description'),
             projects: [
                 {
-                    name: "Plataforma de gestión de análisis higienico-sanitarios",
-                    date: "Nov 2021 - Feb 2022",
+                    name: t('experience.jobs.bimaxpro.p1.name'),
+                    date: t('experience.jobs.bimaxpro.p1.date'),
                     tech: [".NET", "LINQ", "Entity Framework", "PostgreSQL", "Angular 12"],
-                    desc: "Desarrollo de aplicación para la gestión de pruebas sanitarias entre puertos pesqueros y laboratorios."
+                    desc: t('experience.jobs.bimaxpro.p1.desc')
                 }
             ]
         }
@@ -60,7 +63,7 @@ const Experience = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
             >
-                <i className="fas fa-briefcase" style={{ marginRight: '10px' }}></i>Experiencia Laboral
+                <i className="fas fa-briefcase" style={{ marginRight: '10px' }}></i>{t('experience.title')}
             </motion.h2>
 
             <div className="timeline">
@@ -89,8 +92,8 @@ const Experience = () => {
                                             </div>
                                             <p>{proj.desc}</p>
                                             <div className="tech-tags">
-                                                {proj.tech.map((t, k) => {
-                                                    const docUrl = techDocs[t];
+                                                {proj.tech.map((techName, k) => {
+                                                    const docUrl = techDocs[techName];
                                                     return docUrl ? (
                                                         <a
                                                             key={k}
@@ -98,12 +101,12 @@ const Experience = () => {
                                                             target="_blank"
                                                             rel="noopener noreferrer"
                                                             className="tech-tag-link"
-                                                            title={`Ver documentación de ${t}`}
+                                                            title={t('experience.doc_title', { tech: techName })}
                                                         >
-                                                            {t}
+                                                            {techName}
                                                         </a>
                                                     ) : (
-                                                        <span key={k}>{t}</span>
+                                                        <span key={k}>{techName}</span>
                                                     );
                                                 })}
                                             </div>

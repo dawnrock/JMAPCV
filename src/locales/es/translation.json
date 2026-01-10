@@ -1,0 +1,83 @@
+{
+    "nav": {
+        "about": "Sobre mí",
+        "ia": "IA",
+        "experience": "Experiencia",
+        "skills": "Skills",
+        "horizonte": "Proyección",
+        "contact": "Contacto",
+        "menu": "Menú"
+    },
+    "hero": {
+        "greeting": "Hola, soy",
+        "name": "José Manuel Alba Peña",
+        "role": "Desarrollador Full Stack",
+        "description": "Me considero una persona constante, comunicativa y motivada por los retos técnicos que impulsan mi crecimiento profesional.",
+        "contact": "Contactar",
+        "view_cv": "Ver CV"
+    },
+    "about": {
+        "title": "Sobre mí",
+        "p1": "Desarrollador Full Stack con más de 4 años de experiencia en el ciclo completo de desarrollo de software. Especializado en arquitectura MVC e implementación de control de versiones, dando siempre prioridad a un código limpio y escalable.",
+        "p2": "Estoy familiarizado con la gestión de Sprints, historias de usuario y tareas dentro de metodologías ágiles. Además, poseo buenas capacidades para realizar análisis funcionales, técnicos y estimaciones, asegurando el cumplimiento de los objetivos del proyecto."
+    },
+    "experience": {
+        "title": "Experiencia Laboral",
+        "doc_title": "Ver documentación de {{tech}}",
+        "jobs": {
+            "salutic": {
+                "title": "Desarrollador Full Stack",
+                "description": "Desarrollo integral de aplicaciones de gestión sanitaria y control horario.",
+                "p1": {
+                    "name": "Proyecto Staffy (Fichaje Laboral)",
+                    "date": "Oct 2025 - Actualidad",
+                    "desc": "Desarrollo integral de aplicación web dedicada a la gestión de fichajes y control horario."
+                },
+                "p2": {
+                    "name": "Plataforma de Gestión de Datos Sanitarios",
+                    "date": "Mar 2022 - Oct 2025",
+                    "desc": "Administración de plataforma de interoperabilidad para el sector de seguros médicos."
+                }
+            },
+            "bimaxpro": {
+                "title": "Desarrollador Frontend",
+                "description": "Desarrollo de aplicación web para la gestión y envío de pruebas sanitarias en el sector logístico-pesquero.",
+                "p1": {
+                    "name": "Plataforma de gestión de análisis higienico-sanitarios",
+                    "date": "Nov 2021 - Feb 2022",
+                    "desc": "Desarrollo de aplicación para la gestión de pruebas sanitarias entre puertos pesqueros y laboratorios."
+                }
+            }
+        }
+    },
+    "skills": {
+        "title": "Habilidades Técnicas",
+        "categories": {
+            "frontend": "Frontend",
+            "backend": "Backend",
+            "tools": "Tools & Cloud",
+            "ai": "Inteligencia Artificial"
+        }
+    },
+    "horizonte": {
+        "title": "Proyección Profesional",
+        "p1": "Mi objetivo es unirme a una empresa que comparta la visión de crecimiento continuo del desarrollador. Entornos que ofrezcan acceso a <0>certificaciones oficiales</0> y capacitación avanzada en tecnologías de vanguardia.",
+        "p2": "Busco ampliar constantemente mi trayectoria profesional dominando nuevas herramientas y metodologías que me permitan aportar soluciones innovadoras y de alta calidad."
+    },
+    "ia": {
+        "title": "Inteligencia Artificial",
+        "intro": "Estoy familiarizado con el uso de diversos asistentes de Inteligencia Artificial para potenciar el desarrollo y la productividad. Estas herramientas me han permitido adaptarme rápidamente a nuevas tecnologías y aprender de una forma más eficiente. A continuación, detallo las que utilizo habitualmente:",
+        "copilot": "Asistente de código en tiempo real para acelerar la escritura, sugerir optimizaciones y refactorizar funciones complejas.",
+        "notebook": "Herramienta para crear presentaciones, generar resúmenes y estructurar documentación técnica de manera eficiente.",
+        "antigravity": "Colaborador en el desarrollo de esta aplicación. Esta tecnología ha permitido mejorar la calidad del código y agilizar la implementación de funcionalidades, demostrando el potencial de la programación asistida por IA.",
+        "note_title": "Nota importante:",
+        "note_desc": "Hago un uso responsable de estas herramientas, verificando siempre la validez de los datos y consultando la documentación oficial en caso de que la respuesta de la IA no sea totalmente convincente. La supervisión humana es clave para garantizar la calidad y corrección del software."
+    },
+    "contact": {
+        "title": "¿Hablamos?",
+        "subtitle": "Estoy disponible para nuevos retos y oportunidades profesionales."
+    },
+    "footer": {
+        "built_with": "Construido con"
+    }
+}

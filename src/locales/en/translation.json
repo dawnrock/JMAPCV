@@ -1,0 +1,83 @@
+{
+  "nav": {
+    "about": "About Me",
+    "ia": "AI",
+    "experience": "Experience",
+    "skills": "Skills",
+    "horizonte": "Projection",
+    "contact": "Contact",
+    "menu": "Menu"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "José Manuel Alba Peña",
+    "role": "Full Stack Developer",
+    "description": "I consider myself a constant, communicative person, motivated by technical challenges that drive my professional growth.",
+    "contact": "Contact",
+    "view_cv": "View CV"
+  },
+  "about": {
+    "title": "About Me",
+    "p1": "Full Stack Developer with over 4 years of experience in the complete software development lifecycle. Specialized in MVC architecture and version control implementation, always prioritizing clean and scalable code.",
+    "p2": "I am familiar with managing Sprints, user stories, and tasks within agile methodologies. Additionally, I have good capabilities for performing functional and technical analyses and estimates, ensuring project objectives are met."
+  },
+  "experience": {
+    "title": "Work Experience",
+    "doc_title": "View {{tech}} documentation",
+    "jobs": {
+      "salutic": {
+        "title": "Full Stack Developer",
+        "description": "Comprehensive development of health management and time control applications.",
+        "p1": {
+          "name": "Staffy Project (Labor Management)",
+          "date": "Oct 2025 - Present",
+          "desc": "Full development of a web application dedicated to time tracking and labor management."
+        },
+        "p2": {
+          "name": "Healthcare Data Management Platform",
+          "date": "Mar 2022 - Oct 2025",
+          "desc": "Administration of an interoperability platform for the health insurance sector."
+        }
+      },
+      "bimaxpro": {
+        "title": "Frontend Developer",
+        "description": "Web application development for managing and sending healthcare tests in the logical-fishing sector.",
+        "p1": {
+          "name": "Hygienic-Sanitary Analysis Management Platform",
+          "date": "Nov 2021 - Feb 2022",
+          "desc": "Application development for managing healthcare tests between fishing ports and laboratories."
+        }
+      }
+    }
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Tools & Cloud",
+      "ai": "Artificial Intelligence"
+    }
+  },
+  "horizonte": {
+    "title": "Professional Projection",
+    "p1": "My goal is to join a company that shares the vision of continuous developer growth. Environments that offer access to <0>official certifications</0> and advanced training in cutting-edge technologies.",
+    "p2": "I constantly seek to expand my professional career by mastering new tools and methodologies that allow me to provide innovative and high-quality solutions."
+  },
+  "ia": {
+    "title": "Artificial Intelligence",
+    "intro": "I am familiar with using various Artificial Intelligence assistants to enhance development and productivity. These tools have allowed me to quickly adapt to new technologies and learn more efficiently. Below, I detail the ones I use regularly:",
+    "copilot": "Real-time code assistant to speed up writing, suggest optimizations, and refactor complex functions.",
+    "notebook": "Tool for creating presentations, generating summaries, and structuring technical documentation efficiently.",
+    "antigravity": "Collaborator in the development of this application. This technology has improved code quality and streamlined feature implementation, demonstrating the potential of AI-assisted programming.",
+    "note_title": "Important Note:",
+    "note_desc": "I use these tools responsibly, always verifying data validity and consulting official documentation if the AI's response is not entirely convincing. Human supervision is key to ensuring software quality and correctness."
+  },
+  "contact": {
+    "title": "Let's talk!",
+    "subtitle": "I am available for new challenges and professional opportunities."
+  },
+  "footer": {
+    "built_with": "Built with"
+  }
+}

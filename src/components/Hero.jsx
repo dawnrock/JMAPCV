@@ -1,7 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
+    const { t } = useTranslation();
+
     return (
         <section id="hero" className="hero-section">
             <div className="hero-content">
@@ -11,19 +14,16 @@ const Hero = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <span className="greeting">Hola, soy</span>
+                    <span className="greeting">{t('hero.greeting')}</span>
                     <h1>José Manuel<br />Alba Peña</h1>
-                    <h2>Desarrollador <br />Full Stack</h2>
-                    <p>
-                        Me considero una persona constante, comunicativa y motivada por los retos
-                        técnicos que impulsan mi crecimiento profesional.
-                    </p>
+                    <h2>{t('hero.role')}</h2>
+                    <p>{t('hero.description')}</p>
                     <div className="hero-buttons">
                         <button onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })} className="btn primary">
-                            Contactar
+                            {t('hero.contact')}
                         </button>
                         <a href="/cv.html" target="_blank" className="btn secondary">
-                            <i className="fas fa-eye"></i> Ver CV
+                            <i className="fas fa-eye"></i> {t('hero.view_cv')}
                         </a>
                     </div>
                 </motion.div>

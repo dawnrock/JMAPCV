@@ -107,8 +107,19 @@ h5 {
   margin: 0 auto;
   padding: 0 40px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+
+.nav-placeholder {
+  width: 100px;
+  /* Adjust to match nav-actions width for perfect centering */
+}
+
+@media (max-width: 768px) {
+  .nav-placeholder {
+    display: none;
+  }
 }
 
 .nav-links {
@@ -144,6 +155,45 @@ h5 {
 .mobile-menu-btn:hover {
   background: rgba(192, 38, 211, 0.2);
   border-color: var(--accent);
+}
+
+/* Language Switcher */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(192, 38, 211, 0.1);
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.lang-switcher:hover {
+  background: rgba(192, 38, 211, 0.2);
+  border-color: var(--accent);
+  color: var(--text-primary);
+}
+
+.lang-switcher span.active {
+  color: var(--accent);
+  text-shadow: 0 0 8px var(--accent-glow);
+}
+
+.lang-switcher .separator {
+  opacity: 0.3;
+  font-weight: 300;
 }
 
 /* Mobile Sidebar */

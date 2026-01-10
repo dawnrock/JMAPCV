@@ -1,9 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
+    const { t, i18n } = useTranslation();
     const [scrolled, setScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleLanguage = () => {
+        const currentLang = i18n.language || 'es';
+        const newLang = currentLang.startsWith('es') ? 'en' : 'es';
+        i18n.changeLanguage(newLang);
+    };
+
+    const isSpanish = (i18n.language || 'es').startsWith('es');
+    const isEnglish = (i18n.language || '').startsWith('en');
 
     useEffect(() => {
         const handleScroll = () => {
@@ -22,12 +33,12 @@ const Navbar = () => {
     };
 
     const navItems = [
-        { id: 'about', label: 'Sobre mí', icon: 'fa-user' },
-        { id: 'ia', label: 'IA', icon: 'fa-robot' },
-        { id: 'experience', label: 'Experiencia', icon: 'fa-briefcase' },
-        { id: 'skills', label: 'Skills', icon: 'fa-code' },
-        { id: 'horizonte', label: 'Proyección', icon: 'fa-rocket' },
-        { id: 'contact', label: 'Contacto', icon: 'fa-envelope' },
+        { id: 'about', label: t('nav.about'), icon: 'fa-user' },
+        { id: 'ia', label: t('nav.ia'), icon: 'fa-robot' },
+        { id: 'experience', label: t('nav.experience'), icon: 'fa-briefcase' },
+        { id: 'skills', label: t('nav.skills'), icon: 'fa-code' },
+        { id: 'horizonte', label: t('nav.horizonte'), icon: 'fa-rocket' },
+        { id: 'contact', label: t('nav.contact'), icon: 'fa-envelope' },
     ];
 
     return (
@@ -39,6 +50,7 @@ const Navbar = () => {
                 transition={{ duration: 0.5 }}
             >
                 <div className="nav-container">
+                    <div className="nav-placeholder"></div>
                     <ul className="nav-links">
                         {navItems.map((item) => (
                             <li key={item.id} onClick={() => scrollToSection(item.id)}>
@@ -47,9 +59,18 @@ const Navbar = () => {
                         ))}
                     </ul>
 
-                    {/* Mobile Hamburger Button */}
-                    <div className="mobile-menu-btn" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-                        <i className={`fas ${isMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
+                    <div className="nav-actions">
+                        {/* Language Switcher */}
+                        <div className="lang-switcher" onClick={toggleLanguage} title={isSpanish ? 'Switch to English' : 'Cambiar a Español'}>
+                            <span className={isSpanish ? 'active' : ''}>ES</span>
+                            <span className="separator">|</span>
+                            <span className={isEnglish ? 'active' : ''}>EN</span>
+                        </div>
+
+                        {/* Mobile Hamburger Button */}
+                        <div className="mobile-menu-btn" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                            <i className={`fas ${isMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
+                        </div>
                     </div>
                 </div>
             </motion.nav>
@@ -73,7 +94,7 @@ const Navbar = () => {
                             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
                         >
                             <div className="sidebar-header">
-                                <h3>Menú</h3>
+                                <h3>{t('nav.menu')}</h3>
                             </div>
                             <ul className="sidebar-links">
                                 {navItems.map((item) => (

@@ -1,7 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const Skills = () => {
+    const { t } = useTranslation();
     // Technology URL mappings
     const techUrls = {
         // Frontend
@@ -32,22 +34,22 @@ const Skills = () => {
 
     const skillCategories = [
         {
-            title: "Frontend",
+            title: t('skills.categories.frontend'),
             icon: "fa-code",
             skills: ["Angular 13+", "React", "JavaScript (ES6+)", "HTML5/CSS3", "jQuery"]
         },
         {
-            title: "Backend",
+            title: t('skills.categories.backend'),
             icon: "fa-server",
             skills: [".NET Core / C#", "Entity Framework", "SQL Server", "MySQL", "Intersystems IRIS"]
         },
         {
-            title: "Tools & Cloud",
+            title: t('skills.categories.tools'),
             icon: "fa-cloud",
             skills: ["Git / GitLab", "Azure", "Jira", "Postman", "Kibana"]
         },
         {
-            title: "Inteligencia Artificial",
+            title: t('skills.categories.ai'),
             icon: "fa-robot",
             skills: ["GitHub Copilot", "Google NotebookLM", "AI Agents (Antigravity)", "ChatGPT", "Claude"]
         }
@@ -76,7 +78,7 @@ const Skills = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
             >
-                <i className="fas fa-code" style={{ marginRight: '10px' }}></i>Habilidades Técnicas
+                <i className="fas fa-code" style={{ marginRight: '10px' }}></i>{t('skills.title')}
             </motion.h2>
 
             <motion.div
