@@ -319,7 +319,6 @@ h5 {
   font-size: 1.2rem;
   display: block;
   margin-bottom: 20px;
-  text-transform: uppercase;
   letter-spacing: 3px;
 }
 
@@ -748,20 +747,40 @@ h5 {
 /* Education Section Styles */
 .education-grid {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-evenly;
   gap: 20px;
   max-width: 100%;
   padding: 0 40px 30px;
+  grid-template-columns: repeat(3, 1fr);
 }
+
 
 .education-card {
   display: flex;
   align-items: center;
+  padding: 20px;
   gap: 25px;
   background: var(--bg-card);
-  padding: 20px;
   border-radius: 15px;
   border: 1px solid var(--border);
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.edu-content h3 {
+  font-size: 0.8rem;
+}
+
+
+.skill-card {
+  background: var(--bg-card);
+  padding: 20px;
+  /* Reduced from 40px to fit 4 cols */
+  border-radius: 15px;
+  border: 1px solid var(--border);
+  text-align: center;
   transition: all 0.3s ease;
 }
 
@@ -772,6 +791,7 @@ h5 {
 }
 
 .edu-icon {
+  align-self: center;
   font-size: 2rem;
   color: var(--accent-secondary);
   background: rgba(132, 204, 22, 0.1);
@@ -1007,12 +1027,25 @@ h5 {
     margin-bottom: 30px;
   }
 
+  .education-card {
+    display: flex;
+    padding: 10px;
+    gap: 25px;
+    background: var(--bg-card);
+    border-radius: 15px;
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+  }
+
+  .education-grid {
+    flex-direction: column;
+  }
+
   .greeting {
     color: var(--accent);
     font-weight: 600;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     display: block;
-    text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: 10px;
   }
@@ -1032,7 +1065,7 @@ h5 {
     justify-content: center;
     align-items: center;
     order: -1;
-    margin-top: 20px;
+    margin-top: 24px;
   }
 
   .image-wrapper {
@@ -1048,7 +1081,7 @@ h5 {
 
   .hero-text h2 {
     font-size: 1.6rem;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
 
   .hero-buttons {
@@ -1059,7 +1092,7 @@ h5 {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   .hero-section {

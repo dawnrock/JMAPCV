@@ -27,9 +27,6 @@ const Education = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.4, delay: index * 0.1 }}
                     >
-                        <div className="edu-icon">
-                            <i className="fas fa-certificate"></i>
-                        </div>
                         <div className="edu-content">
                             <span className="edu-date">{item.date}</span>
                             <h3>{item.degree}</h3>
