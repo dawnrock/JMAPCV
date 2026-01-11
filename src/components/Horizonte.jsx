@@ -18,7 +18,7 @@ const Horizonte = () => {
                 <div className="about-content">
                     <p>
                         <Trans i18nKey="horizonte.p1">
-                            Mi objetivo es unirme a una empresa que comparta la visión de crecimiento continuo del desarrollador. Entornos que ofrezcan acceso a <strong>certificaciones oficiales</strong> y capacitación avanzada en tecnologías de vanguardia.
+                            <strong />
                         </Trans>
                     </p>
                     <p style={{ marginTop: '1rem' }}>

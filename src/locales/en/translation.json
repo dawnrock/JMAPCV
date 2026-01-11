@@ -1,10 +1,12 @@
 {
   "nav": {
+    "home": "Home",
     "about": "About Me",
     "ia": "AI",
     "experience": "Experience",
+    "education": "Education",
     "skills": "Skills",
-    "horizonte": "Projection",
+    "horizonte": "Vision",
     "contact": "Contact",
     "menu": "Menu"
   },
@@ -22,33 +24,55 @@
     "p2": "I am familiar with managing Sprints, user stories, and tasks within agile methodologies. Additionally, I have good capabilities for performing functional and technical analyses and estimates, ensuring project objectives are met."
   },
   "experience": {
-    "title": "Work Experience",
+    "title": "Professional Experience",
     "doc_title": "View {{tech}} documentation",
     "jobs": {
       "salutic": {
         "title": "Full Stack Developer",
-        "description": "Comprehensive development of health management and time control applications.",
+        "description": "Full-cycle development of healthcare management and time-tracking systems.",
         "p1": {
-          "name": "Staffy Project (Labor Management)",
+          "name": "Staffy Project (Time & Attendance)",
           "date": "Oct 2025 - Present",
-          "desc": "Full development of a web application dedicated to time tracking and labor management."
+          "desc": "End-to-end development of a web application for employee time tracking and attendance management."
         },
         "p2": {
           "name": "Healthcare Data Management Platform",
           "date": "Mar 2022 - Oct 2025",
-          "desc": "Administration of an interoperability platform for the health insurance sector."
+          "desc": "Management of a healthcare interoperability platform for the medical insurance sector."
         }
       },
       "bimaxpro": {
         "title": "Frontend Developer",
-        "description": "Web application development for managing and sending healthcare tests in the logical-fishing sector.",
+        "description": "Development of a web application for managing and processing sanitary tests in the logistics and fishing industry.",
         "p1": {
-          "name": "Hygienic-Sanitary Analysis Management Platform",
+          "name": "Hygiene & Safety Analysis Platform",
           "date": "Nov 2021 - Feb 2022",
-          "desc": "Application development for managing healthcare tests between fishing ports and laboratories."
+          "desc": "Development of an application to streamline sanitary testing procedures between fishing ports and laboratories."
         }
       }
     }
+  },
+  "education": {
+    "title": "Educational Background",
+    "items": [
+      {
+        "degree": "Frontend Master",
+        "school": "Lemoncode",
+        "url": "https://lemoncode.net",
+        "date": "Sep 2020 - May 2021"
+      },
+      {
+        "degree": "JavaScript Bootcamp",
+        "school": "Lemoncode",
+        "url": "https://lemoncode.net",
+        "date": "Mar 2020 - Oct 2020"
+      },
+      {
+        "degree": "Art Baccalaureate",
+        "school": "IES Politecnico Jesus Marin",
+        "date": "2002 - 2004"
+      }
+    ]
   },
   "skills": {
     "title": "Technical Skills",
@@ -60,9 +84,9 @@
     }
   },
   "horizonte": {
-    "title": "Professional Projection",
-    "p1": "My goal is to join a company that shares the vision of continuous developer growth. Environments that offer access to <0>official certifications</0> and advanced training in cutting-edge technologies.",
-    "p2": "I constantly seek to expand my professional career by mastering new tools and methodologies that allow me to provide innovative and high-quality solutions."
+    "title": "Career Vision",
+    "p1": "My goal is to join an organization that fosters continuous professional growth, providing access to <0>official certifications</0> and advanced training in cutting-edge technologies.",
+    "p2": "I am committed to continuously expanding my expertise by mastering new tools and methodologies, enabling me to deliver innovative and high-quality software solutions."
   },
   "ia": {
     "title": "Artificial Intelligence",
@@ -75,7 +99,11 @@
   },
   "contact": {
     "title": "Let's talk!",
-    "subtitle": "I am available for new challenges and professional opportunities."
+    "subtitle": "I am available for new challenges and professional opportunities.",
+    "copy_email": "Copy email",
+    "email_copied": "Email copied!",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
   },
   "footer": {
     "built_with": "Built with"

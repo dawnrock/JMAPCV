@@ -28,16 +28,28 @@ const Navbar = () => {
         const element = document.getElementById(id);
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
+
+            // Reutilizamos el efecto de hover/touch específico de cada sección
+            element.classList.remove('active-section');
+            void element.offsetWidth; // Force reflow
+            element.classList.add('active-section');
+
+            // El efecto dura lo mismo que una transición suave
+            setTimeout(() => {
+                element.classList.remove('active-section');
+            }, 2000);
         }
         setIsMenuOpen(false); // Close menu after clicking
     };
 
     const navItems = [
+        { id: 'hero', label: t('nav.home'), icon: 'fa-home' },
         { id: 'about', label: t('nav.about'), icon: 'fa-user' },
-        { id: 'ia', label: t('nav.ia'), icon: 'fa-robot' },
         { id: 'experience', label: t('nav.experience'), icon: 'fa-briefcase' },
+        { id: 'education', label: t('nav.education'), icon: 'fa-graduation-cap' },
         { id: 'skills', label: t('nav.skills'), icon: 'fa-code' },
         { id: 'horizonte', label: t('nav.horizonte'), icon: 'fa-rocket' },
+        { id: 'ia', label: t('nav.ia'), icon: 'fa-robot' },
         { id: 'contact', label: t('nav.contact'), icon: 'fa-envelope' },
     ];
 

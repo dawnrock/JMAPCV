@@ -78,7 +78,7 @@ const Skills = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
             >
-                <i className="fas fa-code" style={{ marginRight: '10px' }}></i>{t('skills.title')}
+                <i className="fas fa-laptop-code" style={{ marginRight: '10px' }}></i>{t('skills.title')}
             </motion.h2>
 
             <motion.div

@@ -1,8 +1,10 @@
 {
     "nav": {
+        "home": "Inicio",
         "about": "Sobre mí",
         "ia": "IA",
         "experience": "Experiencia",
+        "education": "Formación",
         "skills": "Skills",
         "horizonte": "Proyección",
         "contact": "Contacto",
@@ -50,6 +52,28 @@
             }
         }
     },
+    "education": {
+        "title": "Formación Académica",
+        "items": [
+            {
+                "degree": "Frontend Máster",
+                "school": "Lemoncode",
+                "url": "https://lemoncode.net",
+                "date": "Sep 2020 - May 2021"
+            },
+            {
+                "degree": "Bootcamp JavaScript",
+                "school": "Lemoncode",
+                "url": "https://lemoncode.net",
+                "date": "Mar 2020 - Oct 2020"
+            },
+            {
+                "degree": "Bachillerato de Artes",
+                "school": "IES Politecnico Jesus Marin",
+                "date": "2002 - 2004"
+            }
+        ]
+    },
     "skills": {
         "title": "Habilidades Técnicas",
         "categories": {
@@ -75,9 +99,13 @@
     },
     "contact": {
         "title": "¿Hablamos?",
-        "subtitle": "Estoy disponible para nuevos retos y oportunidades profesionales."
+        "subtitle": "Estoy disponible para nuevos retos y oportunidades profesionales.",
+        "copy_email": "Copiar email",
+        "email_copied": "¡Email copiado!",
+        "linkedin": "LinkedIn",
+        "github": "GitHub"
     },
     "footer": {
-        "built_with": "Construido con"
+        "built_with": "Desarrollado con"
     }
 }

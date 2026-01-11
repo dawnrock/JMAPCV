@@ -33,25 +33,38 @@ body {
   background: radial-gradient(circle at top left, #1a0f2e 0%, #0a0118 40%);
 }
 
+@keyframes backgroundDrift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .app-container {
   display: flex;
   flex-direction: column;
   width: 100%;
   overflow-x: hidden;
   min-height: 100vh;
-  /* Separación entre elementos del contenedor */
+  position: relative;
 
-  /* Textured Background (Chromatic Family) */
+  /* Dynamic Mesh Background (No Squares) */
   background-color: var(--bg-dark);
   background-image:
-    radial-gradient(circle at 20% 40%, rgba(192, 38, 211, 0.15) 0%, transparent 40%),
-    radial-gradient(circle at 80% 20%, rgba(99, 102, 241, 0.15) 0%, transparent 40%),
-    radial-gradient(circle at 50% 80%, rgba(34, 211, 238, 0.1) 0%, transparent 40%),
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-  background-size: 100% 100%, 100% 100%, 100% 100%, 50px 50px, 50px 50px;
+    radial-gradient(at 0% 0%, rgba(192, 38, 211, 0.1) 0, transparent 50%),
+    radial-gradient(at 50% 0%, rgba(99, 102, 241, 0.1) 0, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(34, 211, 238, 0.1) 0, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(192, 38, 211, 0.05) 0, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(99, 102, 241, 0.1) 0, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(192, 38, 211, 0.1) 0, transparent 50%);
   background-attachment: fixed;
-  /* Parallax-like feel */
 }
 
 /* Utilities */
@@ -133,6 +146,7 @@ h5 {
   color: var(--text-secondary);
   font-weight: 500;
   transition: color 0.3s;
+  white-space: nowrap;
 }
 
 .nav-links li:hover {
@@ -162,6 +176,7 @@ h5 {
   display: flex;
   align-items: center;
   gap: 15px;
+  margin-left: 40px;
 }
 
 .lang-switcher {
@@ -290,9 +305,12 @@ h5 {
 .hero-content {
   max-width: 1200px;
   width: 100%;
-  display: contents;
-  grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 .greeting {
@@ -300,27 +318,36 @@ h5 {
   font-weight: 600;
   font-size: 1.2rem;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .hero-text h1 {
-  font-size: 4rem;
-  line-height: 1.1;
-  margin-bottom: 10px;
+  font-size: 5.5rem;
+  line-height: 1;
+  margin-bottom: 20px;
   font-weight: 800;
+  letter-spacing: -2px;
+  background: linear-gradient(to bottom right, #fff 30%, var(--text-secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-text h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--text-secondary);
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  font-weight: 400;
 }
 
 .hero-text p {
   color: var(--text-secondary);
-  font-size: 1.1rem;
-  max-width: 500px;
-  margin-bottom: 30px;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 40px;
+  line-height: 1.8;
 }
 
 .hero-buttons {
@@ -375,28 +402,28 @@ h5 {
 
 .hero-image {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: -280px;
 }
 
 .image-wrapper {
-  width: 220px;
-  height: 220px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   overflow: hidden;
-  border: 3px solid var(--border);
-  box-shadow: 0 0 30px rgba(89, 31, 155, 0.4), 0 0 60px var(--accent-glow);
+  box-shadow: 0 0 50px var(--accent-glow);
   position: relative;
+  background: var(--bg-card);
 }
 
 .image-wrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform: rotate(-10deg);
+  transform: rotate(-10deg) scale(1.05);
+  transition: transform 0.5s ease;
 }
+
 
 .scroll-indicator {
   position: absolute;
@@ -635,9 +662,9 @@ h5 {
 
 /* Section Differentiation with uniform gradient glow (box-shadow) */
 #about,
-#about,
 #ia,
 #experience,
+#education,
 #skills,
 #horizonte,
 #contact {
@@ -662,43 +689,129 @@ h5 {
   /* Half of original 120px for web */
 }
 
-#about:hover {
+#about:hover,
+#about.active-section {
   background: transparent;
   box-shadow: 0 0 20px 2px rgba(192, 38, 211, 0.4);
   border-color: rgba(192, 38, 211, 0.3);
 }
 
-#ia:hover {
+#ia:hover,
+#ia.active-section {
   background: transparent;
-  /* Silver/Platinum (Sleek, High-Tech, fits Purple/Cyan family) */
   box-shadow: 0 0 20px 2px rgba(226, 232, 240, 0.5);
   border-color: rgba(226, 232, 240, 0.4);
 }
 
-#experience:hover {
+#experience:hover,
+#experience.active-section {
   background: transparent;
   box-shadow: 0 0 20px 2px rgba(167, 139, 250, 0.4);
   border-color: rgba(167, 139, 250, 0.3);
 }
 
-#skills:hover {
+#skills:hover,
+#skills.active-section {
   background: transparent;
-  /* Softer Pink/Red */
   box-shadow: 0 0 20px 2px rgba(249, 168, 212, 0.4);
   border-color: rgba(249, 168, 212, 0.3);
 }
 
-#horizonte:hover {
+#horizonte:hover,
+#horizonte.active-section {
   background: transparent;
-  /* Cool Cyan/Teal (Cooler tone within chromatic family) */
   box-shadow: 0 0 20px 2px rgba(34, 211, 238, 0.5);
   border-color: rgba(34, 211, 238, 0.4);
 }
 
-#contact:hover {
+#education:hover,
+#education.active-section {
+  background: transparent;
+  box-shadow: 0 0 20px 2px rgba(132, 204, 22, 0.4);
+  border-color: rgba(132, 204, 22, 0.3);
+}
+
+#contact:hover,
+#contact.active-section {
   background: transparent;
   box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.2);
+}
+
+#hero:hover,
+#hero.active-section {
+  background: transparent;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+/* Education Section Styles */
+.education-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 100%;
+  padding: 0 40px 30px;
+}
+
+.education-card {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  background: var(--bg-card);
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.education-card:hover {
+  border-color: var(--accent-secondary);
+  box-shadow: 0 5px 15px rgba(132, 204, 22, 0.2);
+  transform: translateY(-3px);
+}
+
+.edu-icon {
+  font-size: 2rem;
+  color: var(--accent-secondary);
+  background: rgba(132, 204, 22, 0.1);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.edu-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 5px;
+  color: var(--text-primary);
+}
+
+.edu-content .school {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.school-link {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.school-link:hover {
+  color: var(--accent);
+}
+
+.edu-date {
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
 }
 
 
@@ -767,32 +880,76 @@ h5 {
   opacity: 0.7;
 }
 
-.contact-links {
+.contact-grid {
   display: flex;
-  justify-content: center;
-  gap: 80px;
-  /* Increased spacing for desktop */
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
   margin-top: 40px;
 }
 
-.contact-btn {
+.contact-main {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  margin: 10px 0;
+}
+
+.contact-btn,
+.social-btn {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 15px 30px;
+  padding: 12px 25px;
   background: rgba(255, 255, 255, 0.03);
   color: var(--text-primary);
   text-decoration: none;
   border-radius: 50px;
   border: 1px solid var(--border);
   transition: all 0.3s;
+  font-size: 0.95rem;
+  cursor: pointer;
+  font-family: inherit;
 }
 
-.contact-btn:hover {
+.contact-btn:hover,
+.social-btn:hover {
   border-color: var(--accent);
   color: var(--accent);
   transform: translateY(-3px);
   box-shadow: 0 5px 20px var(--accent-glow);
+}
+
+.copy-btn.copied {
+  background: rgba(132, 204, 22, 0.1);
+  border-color: var(--accent-secondary);
+  color: var(--accent-secondary);
+}
+
+.social-btn.linkedin i {
+  color: #0077b5;
+}
+
+.social-btn.github i {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .contact-main {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact-btn {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 /* Skills Grid Responsiveness (Restored) */
@@ -836,6 +993,7 @@ h5 {
   #about,
   #ia,
   #experience,
+  #education,
   #skills,
   #horizonte,
   #contact {
@@ -984,5 +1142,50 @@ h5 {
 
   .section-title {
     margin-bottom: 2rem;
+  }
+
+  /* Preserve original mobile look for Hero */
+  .hero-section {
+    padding-top: 80px;
+    height: auto;
+    min-height: auto;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    margin: 0 auto 25px;
+  }
+
+  .image-wrapper {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 250px;
   }
 }
