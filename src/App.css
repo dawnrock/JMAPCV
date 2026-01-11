@@ -1146,14 +1146,14 @@ h5 {
 
   /* Preserve original mobile look for Hero */
   .hero-section {
-    padding-top: 80px;
+    padding-top: 40px;
     height: auto;
     min-height: auto;
   }
 
   .hero-content {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     text-align: center;
     gap: 20px;
   }
