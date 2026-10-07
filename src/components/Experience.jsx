@@ -8,6 +8,8 @@ const Experience = () => {
     // Mapping of technologies to their official documentation URLs
     const techDocs = {
         ".NET": "https://learn.microsoft.com/es-es/dotnet/",
+        "C#": "https://learn.microsoft.com/es-es/dotnet/csharp/",
+        "SQL": "https://learn.microsoft.com/es-es/sql/",
         "LINQ": "https://learn.microsoft.com/es-es/dotnet/csharp/linq/",
         "Entity Framework": "https://learn.microsoft.com/es-es/ef/",
         "MySQL": "https://dev.mysql.com/doc/",
@@ -21,6 +23,19 @@ const Experience = () => {
     };
 
     const jobs = [
+        {
+            title: t('experience.jobs.knowmadmood.title'),
+            company: "Knowmad Mood (Banco Santander)",
+            description: t('experience.jobs.knowmadmood.description'),
+            projects: [
+                {
+                    name: t('experience.jobs.knowmadmood.p1.name'),
+                    date: t('experience.jobs.knowmadmood.p1.date'),
+                    tech: [".NET", "C#", "SQL Server", "SQL"],
+                    desc: t('experience.jobs.knowmadmood.p1.desc')
+                }
+            ]
+        },
         {
             title: t('experience.jobs.salutic.title'),
             company: "Salutic S.L.",

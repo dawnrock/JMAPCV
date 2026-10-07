@@ -6,7 +6,7 @@ const MainContent = () => {
             <section className="summary">
                 <h3><i className="fas fa-user"></i> Perfil Profesional</h3>
                 <p>
-                    Desarrollador Full Stack con más de 3 años de experiencia en el ciclo completo de desarrollo de
+                    Desarrollador Full Stack con casi 5 años de experiencia en el ciclo completo de desarrollo de
                     software.
                     Especializado en la creación y mantenimiento de aplicaciones web complejas.
                     Diseño de APIs y gestión de bases de datos, además de buenas capacidades para la resolución de
@@ -22,13 +22,32 @@ const MainContent = () => {
                 <div className="job-item">
                     <div className="job-header">
                         <h4>Desarrollador Full Stack</h4>
+                        <span className="company">Knowmad Mood (Banco Santander)</span>
+                        <span className="date">Febrero 2026 - Septiembre 2026</span>
+                    </div>
+                    <div className="job-details">
+                        <div className="project-highlight">
+                            <h5>Plataforma de Conciliación Bancaria</h5>
+                            <p>Desarrollo full stack y resolución de incidencias técnicas para Banco Santander.</p>
+                            <ul>
+                                <li>Desarrollo backend y frontend con <strong>.NET</strong> y <strong>C#</strong>.</li>
+                                <li>Consultas y gestión de base de datos con <strong>SQL Server</strong> / <strong>SQL</strong>.</li>
+                                <li>Gestión y resolución de incidencias técnicas en entorno bancario.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="job-item">
+                    <div className="job-header">
+                        <h4>Desarrollador Full Stack</h4>
                         <span className="company">Salutic S.L.</span>
-                        <span className="date">Marzo 2022 - Actualidad</span>
+                        <span className="date">Marzo 2022 - Febrero 2026</span>
                     </div>
                     <div className="job-details">
                         <div className="project-highlight">
                             <h5>Proyecto Staffy (Fichaje Laboral)</h5>
-                            <span className="project-date">Oct 2025 - Dic 2025</span>
+                            <span className="project-date">Oct 2025 - Feb 2026</span>
                             <p>Desarrollo integral de una aplicación de gestión de fichajes y control horario.</p>
                             <ul>
                                 <li>Implementación del frontend con <strong>Angular 13</strong>.</li>

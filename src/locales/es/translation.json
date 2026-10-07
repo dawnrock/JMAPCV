@@ -20,19 +20,28 @@
     },
     "about": {
         "title": "Sobre mí",
-        "p1": "Desarrollador Full Stack con más de 4 años de experiencia en el ciclo completo de desarrollo de software. Especializado en arquitectura MVC e implementación de control de versiones, dando siempre prioridad a un código limpio y escalable.",
+        "p1": "Desarrollador Full Stack con casi 5 años de experiencia en el ciclo completo de desarrollo de software. Especializado en arquitectura MVC e implementación de control de versiones, dando siempre prioridad a un código limpio y escalable.",
         "p2": "Estoy familiarizado con la gestión de Sprints, historias de usuario y tareas dentro de metodologías ágiles. Además, poseo buenas capacidades para realizar análisis funcionales, técnicos y estimaciones, asegurando el cumplimiento de los objetivos del proyecto."
     },
     "experience": {
         "title": "Experiencia Laboral",
         "doc_title": "Ver documentación de {{tech}}",
         "jobs": {
+            "knowmadmood": {
+                "title": "Desarrollador Full Stack",
+                "description": "Desarrollo full stack y resolución de incidencias para Banco Santander.",
+                "p1": {
+                    "name": "Plataforma de Conciliación Bancaria (Banco Santander)",
+                    "date": "Feb 2026 - Sep 2026",
+                    "desc": "Desarrollo y mantenimiento de aplicación de conciliación bancaria, análisis y resolución de incidencias técnicas."
+                }
+            },
             "salutic": {
                 "title": "Desarrollador Full Stack",
                 "description": "Desarrollo integral de aplicaciones de gestión sanitaria y control horario.",
                 "p1": {
                     "name": "Proyecto Staffy (Fichaje Laboral)",
-                    "date": "Oct 2025 - Actualidad",
+                    "date": "Oct 2025 - Feb 2026",
                     "desc": "Desarrollo integral de aplicación web dedicada a la gestión de fichajes y control horario."
                 },
                 "p2": {

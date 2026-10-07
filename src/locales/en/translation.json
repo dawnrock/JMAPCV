@@ -20,19 +20,28 @@
   },
   "about": {
     "title": "About Me",
-    "p1": "Full Stack Developer with over 4 years of experience in the complete software development lifecycle. Specialized in MVC architecture and version control implementation, always prioritizing clean and scalable code.",
+    "p1": "Full Stack Developer with nearly 5 years of experience in the complete software development lifecycle. Specialized in MVC architecture and version control implementation, always prioritizing clean and scalable code.",
     "p2": "I am familiar with managing Sprints, user stories, and tasks within agile methodologies. Additionally, I have good capabilities for performing functional and technical analyses and estimates, ensuring project objectives are met."
   },
   "experience": {
     "title": "Professional Experience",
     "doc_title": "View {{tech}} documentation",
     "jobs": {
+      "knowmadmood": {
+        "title": "Full Stack Developer",
+        "description": "Full stack development and incident management for Banco Santander.",
+        "p1": {
+          "name": "Bank Reconciliation Platform (Banco Santander)",
+          "date": "Feb 2026 - Sep 2026",
+          "desc": "Development and maintenance of a bank reconciliation application and issue analysis and troubleshooting."
+        }
+      },
       "salutic": {
         "title": "Full Stack Developer",
         "description": "Full-cycle development of healthcare management and time-tracking systems.",
         "p1": {
           "name": "Staffy Project (Time & Attendance)",
-          "date": "Oct 2025 - Present",
+          "date": "Oct 2025 - Feb 2026",
           "desc": "End-to-end development of a web application for employee time tracking and attendance management."
         },
         "p2": {

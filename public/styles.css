@@ -33,9 +33,7 @@ body {
     grid-template-columns: 300px 1fr;
     max-width: 210mm;
     /* A4 width */
-    min-height: 300mm;
-    max-height: 300mm;
-    /* A4 height */
+    min-height: 297mm;
     margin: 2rem auto;
     background: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -326,10 +324,25 @@ body {
 }
 
 @media print {
-    body {
-        background: white;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
+    @page {
+        margin: 0;
+        size: A4 portrait;
+    }
+
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        box-sizing: border-box !important;
+    }
+
+    html, body {
+        width: 210mm !important;
+        height: 297mm !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: white !important;
+        font-size: 12.2px !important;
+        line-height: 1.42 !important;
     }
 
     .print-controls {
@@ -337,47 +350,189 @@ body {
     }
 
     .cv-container {
-        margin: 0;
-        box-shadow: none;
-        width: 100%;
-        max-width: none;
-        grid-template-columns: 280px 1fr;
-        /* Mantener 2 columnas en print */
-        min-height: auto;
+        display: grid !important;
+        grid-template-columns: 260px 1fr !important;
+        width: 210mm !important;
+        height: 297mm !important;
+        min-height: 297mm !important;
+        max-height: 297mm !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+        page-break-after: avoid !important;
+        page-break-inside: avoid !important;
     }
 
     .sidebar {
         background-color: var(--primary-color) !important;
         color: white !important;
-        -webkit-print-color-adjust: exact;
+        -webkit-print-color-adjust: exact !important;
+        padding: 1.8rem 1.2rem !important;
+        height: 100% !important;
+        min-height: 297mm !important;
+    }
+
+    .profile-photo {
+        margin-bottom: 1rem !important;
+    }
+
+    .profile-photo img {
+        width: 120px !important;
+        height: 120px !important;
+    }
+
+    .profile-header h1 {
+        font-size: 1.75rem !important;
+        line-height: 1.15 !important;
+        margin-bottom: 0.35rem !important;
+    }
+
+    .profile-header h2 {
+        font-size: 1rem !important;
+        margin-bottom: 1.4rem !important;
+    }
+
+    .contact-info {
+        margin-bottom: 1.4rem !important;
+    }
+
+    .contact-item {
+        margin-bottom: 0.55rem !important;
+        font-size: 0.9rem !important;
+    }
+
+    .sidebar h3 {
+        font-size: 1.02rem !important;
+        margin-top: 1.4rem !important;
+        margin-bottom: 0.75rem !important;
+        padding-bottom: 0.25rem !important;
+    }
+
+    .skill-group {
+        margin-bottom: 0.95rem !important;
+    }
+
+    .skill-group h4 {
+        font-size: 0.85rem !important;
+        margin-bottom: 0.35rem !important;
+    }
+
+    .tags {
+        gap: 6px !important;
+    }
+
+    .tags span {
+        padding: 3px 8px !important;
+        font-size: 0.8rem !important;
+    }
+
+    .languages-section li {
+        margin-bottom: 0.45rem !important;
+        font-size: 0.9rem !important;
+    }
+
+    .interests-section p {
+        font-size: 0.88rem !important;
+        line-height: 1.4 !important;
+    }
+
+    .main-content {
+        padding: 1.8rem 2.2rem !important;
+        background-color: var(--bg-main) !important;
+        height: 100% !important;
+        min-height: 297mm !important;
+    }
+
+    .main-content h3 {
+        font-size: 1.2rem !important;
+        margin-top: 0.95rem !important;
+        margin-bottom: 0.65rem !important;
+        padding-bottom: 0.25rem !important;
+    }
+
+    .main-content h3:first-of-type {
+        margin-top: 0 !important;
+    }
+
+    .summary p {
+        padding-bottom: 0.7rem !important;
+        font-size: 0.94rem !important;
+        line-height: 1.42 !important;
+    }
+
+    .job-item {
+        margin-bottom: 0.95rem !important;
+    }
+
+    .job-header {
+        margin-bottom: 0.25rem !important;
+    }
+
+    .company {
+        font-size: 1.05rem !important;
+    }
+
+    .date {
+        font-size: 0.88rem !important;
     }
 
     .project-highlight {
-        break-inside: avoid;
+        padding: 0.65rem 0.9rem !important;
+        margin: 0.5rem 0 !important;
+        break-inside: avoid !important;
         background-color: #f8f9fa !important;
-        -webkit-print-color-adjust: exact;
+        -webkit-print-color-adjust: exact !important;
+    }
+
+    .project-highlight h5 {
+        font-size: 0.96rem !important;
+        margin-bottom: 0.15rem !important;
+    }
+
+    .project-date {
+        font-size: 0.82rem !important;
+        margin-bottom: 0.35rem !important;
+    }
+
+    .project-highlight p {
+        font-size: 0.88rem !important;
+        line-height: 1.36 !important;
+    }
+
+    .job-details ul {
+        margin-left: 1.2rem !important;
+        margin-top: 0.35rem !important;
+    }
+
+    .job-details li {
+        font-size: 0.86rem !important;
+        margin-bottom: 0.18rem !important;
+        line-height: 1.35 !important;
+    }
+
+    .edu-item {
+        margin-bottom: 0.65rem !important;
+    }
+
+    .edu-header h4 {
+        font-size: 0.96rem !important;
+    }
+
+    .institution {
+        font-size: 0.88rem !important;
+    }
+
+    .edu-date {
+        font-size: 0.84rem !important;
     }
 
     a {
-        text-decoration: none;
-        color: inherit;
+        text-decoration: none !important;
+        color: inherit !important;
     }
 
-    /* Asegurar que los iconos se vean si es posible, o usar texto alternativo */
     i {
         color: var(--accent-color) !important;
-        -webkit-print-color-adjust: exact;
-    }
-
-    @page {
-        margin: 0;
-        size: A4;
-    }
-
-    /* Forzar ajuste si es necesario */
-    .main-content,
-    .sidebar {
-        padding-top: 1.5rem !important;
-        padding-bottom: 1.5rem !important;
+        -webkit-print-color-adjust: exact !important;
     }
 }
