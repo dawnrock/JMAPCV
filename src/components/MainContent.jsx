@@ -6,13 +6,12 @@ const MainContent = () => {
             <section className="summary">
                 <h3><i className="fas fa-user"></i> Perfil Profesional</h3>
                 <p>
-                    Desarrollador Full Stack con casi 5 años de experiencia en el ciclo completo de desarrollo de
+                    Desarrollador Full Stack con 5 años de experiencia en el ciclo completo de desarrollo de
                     software.
                     Especializado en la creación y mantenimiento de aplicaciones web complejas.
                     Diseño de APIs y gestión de bases de datos, además de buenas capacidades para la resolución de
                     incidencias.
-                    Me considero una persona constante, comunicativa y motivada por los retos técnicos que impulsan mi
-                    crecimiento profesional.
+                    Apasionado por resolver retos técnicos complejos mediante código limpio, combinando arquitectura de software sólida con curiosidad continua por la innovación y la IA.
                 </p>
             </section>
 
