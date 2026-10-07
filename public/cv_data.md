@@ -9,7 +9,7 @@
 - **Idiomas**: Español (Nativo), Inglés.
 
 ## Perfil Profesional
-Desarrollador full-stack con casi 5 años de experiencia desempeñando roles tanto en desarrollo frontend como backend. Contribuyendo en el mantenimiento de aplicaciones, diseño de APIs, microservicios, bases de datos SQL y resolución de incidencias de usuarios. Soy una persona constante, comunicativa y con muchas ganas de seguir creciendo en el sector IT. Me motiva aprender nuevas tecnologías y enfrentarme a retos que me ayuden a mejorar como programador.
+Desarrollador full-stack con 5 años de experiencia desempeñando roles tanto en desarrollo frontend como backend. Contribuyendo en el mantenimiento de aplicaciones, diseño de APIs, microservicios, bases de datos SQL y resolución de incidencias de usuarios. Soy una persona constante, comunicativa y con muchas ganas de seguir creciendo en el sector IT. Me motiva aprender nuevas tecnologías y enfrentarme a retos que me ayuden a mejorar como programador.
 
 ## Experiencia Laboral
 
