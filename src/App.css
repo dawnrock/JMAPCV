@@ -649,23 +649,6 @@ h5 {
   white-space: nowrap;
 }
 
-.achievement {
-  display: flex;
-  gap: 10px;
-  align-items: baseline;
-}
-
-.project-card .achievement {
-  color: var(--text-primary);
-  font-weight: 500;
-}
-
-.achievement i {
-  flex-shrink: 0;
-  font-size: 0.8rem;
-  color: var(--accent);
-}
-
 .project-card {
   background: rgba(255, 255, 255, 0.03);
   padding: 15px;

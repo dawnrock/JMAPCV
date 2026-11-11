@@ -55,8 +55,7 @@
         "p2": {
           "name": "Healthcare Data Management Platform (DKV)",
           "date": "Mar 2022 - Oct 2025",
-          "desc": "Management of a healthcare interoperability platform for the medical insurance sector.",
-          "achievement": "Fixed a user duplication issue in the registration processes and improved their performance."
+          "desc": "Management of a healthcare interoperability platform for the medical insurance sector."
         }
       },
       "bimaxpro": {

@@ -32,7 +32,7 @@ const jobsData = [
         company: "Salutic S.L.",
         projects: [
             { key: 'p1', tech: [".NET", "LINQ", "Entity Framework", "MySQL", "Angular 13"] },
-            { key: 'p2', tech: ["Intersystems IRIS", ".NET", "ObjectScript", "SQL Server", "jQuery"], hasAchievement: true }
+            { key: 'p2', tech: ["Intersystems IRIS", ".NET", "ObjectScript", "SQL Server", "jQuery"] }
         ]
     },
     {
@@ -91,12 +91,6 @@ const Experience = () => {
                                                     <span className="project-date">{t(`${pBase}.date`)}</span>
                                                 </div>
                                                 <p>{t(`${pBase}.desc`)}</p>
-                                                {proj.hasAchievement && (
-                                                    <p className="achievement">
-                                                        <i className="fas fa-check" aria-hidden="true"></i>
-                                                        <span>{t(`${pBase}.achievement`)}</span>
-                                                    </p>
-                                                )}
                                                 <div className="tech-tags">
                                                     {proj.tech.map((techName) => {
                                                         const docUrl = techDocs[techName]?.replace('{lang}', docsLang);
