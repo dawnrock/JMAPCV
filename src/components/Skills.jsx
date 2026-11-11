@@ -16,6 +16,7 @@ const Skills = () => {
         ".NET Core / C#": "https://dotnet.microsoft.com/",
         "Entity Framework": "https://learn.microsoft.com/ef/",
         "LINQ": "https://learn.microsoft.com/dotnet/csharp/linq/",
+        "DDD": "https://martinfowler.com/bliki/DomainDrivenDesign.html",
         "SQL Server": "https://www.microsoft.com/en-us/sql-server",
         "MySQL": "https://www.mysql.com/",
         "Intersystems IRIS": "https://www.intersystems.com/products/intersystems-iris/",
@@ -31,7 +32,7 @@ const Skills = () => {
         "Google NotebookLM": "https://notebooklm.google.com/",
         "Google Antigravity": "https://antigravity.google/",
         "ChatGPT": "https://openai.com/chatgpt",
-        "Claude": "https://www.anthropic.com/claude"
+        "Claude Code": "https://www.anthropic.com/claude-code"
     };
 
     const skillCategories = [
@@ -43,7 +44,7 @@ const Skills = () => {
         {
             title: t('skills.categories.backend'),
             icon: "fa-server",
-            skills: [".NET Core / C#", "Entity Framework", "LINQ", "SQL Server", "MySQL", "Intersystems IRIS"]
+            skills: [".NET Core / C#", "Entity Framework", "LINQ", "DDD", "SQL Server", "MySQL", "Intersystems IRIS"]
         },
         {
             title: t('skills.categories.tools'),
@@ -53,7 +54,7 @@ const Skills = () => {
         {
             title: t('skills.categories.ai'),
             icon: "fa-robot",
-            skills: ["GitHub Copilot", "Google NotebookLM", "Google Antigravity", "ChatGPT", "Claude"]
+            skills: ["GitHub Copilot", "Google NotebookLM", "Google Antigravity", "Claude Code", "ChatGPT"]
         }
     ];
 

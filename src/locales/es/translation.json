@@ -71,7 +71,23 @@
         }
     },
     "education": {
-        "title": "Formación Académica",
+        "title": "Formación",
+        "courses_title": "Cursos recientes",
+        "academic_title": "Formación académica",
+        "courses": [
+            {
+                "degree": "Domain-Driven Design (DDD)",
+                "school": "DEXS · Knowmad Mood",
+                "date": "Oct 2026 · 16 h",
+                "note": "Diseño estratégico y táctico, arquitectura e implementación, refactorización y uso de IA generativa en proyectos DDD."
+            },
+            {
+                "degree": "Claude Code para desarrollo de software",
+                "school": "DEXS · Knowmad Mood",
+                "date": "Oct 2026 · 16 h",
+                "note": "Ciclo agéntico, gestión del contexto, skills, agentes y subagentes, MCPs, hooks, desarrollo multiagente e integración de la IA en CI/CD."
+            }
+        ],
         "items": [
             {
                 "degree": "Máster Frontend",
@@ -89,7 +105,8 @@
                 "degree": "Bachillerato de Artes",
                 "school": "IES Politécnico Jesús Marín",
                 "date": "2002 - 2004",
-                "note": "Base creativa y ojo para el diseño de interfaces."
+                "note": "Base creativa y ojo para el diseño de interfaces.",
+                "minor": true
             }
         ]
     },
@@ -112,7 +129,8 @@
         "copilot": "Autocompletado, sugerencias de optimización y refactorización en el editor.",
         "notebook": "Resúmenes, presentaciones y estructuración de documentación técnica.",
         "antigravity": "Agentes de IA con los que he desarrollado esta web.",
-        "chatgpt_claude": "Análisis de problemas, revisión de código y apoyo en el diseño de soluciones.",
+        "claude_code": "Desarrollo asistido por agentes: subagentes, MCPs, hooks y skills, con formación certificada.",
+        "chatgpt": "Análisis de problemas, revisión de código y apoyo en el diseño de soluciones.",
         "note_title": "Uso responsable:",
         "note_desc": "Verifico siempre lo que propone la IA y recurro a la documentación oficial cuando una respuesta no me convence. La supervisión humana es clave para garantizar la calidad del software."
     },

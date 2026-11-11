@@ -71,7 +71,23 @@
     }
   },
   "education": {
-    "title": "Educational Background",
+    "title": "Education",
+    "courses_title": "Recent courses",
+    "academic_title": "Academic background",
+    "courses": [
+      {
+        "degree": "Domain-Driven Design (DDD)",
+        "school": "DEXS · Knowmad Mood",
+        "date": "Oct 2026 · 16 h",
+        "note": "Strategic and tactical design, architecture and implementation, refactoring and generative AI in DDD projects."
+      },
+      {
+        "degree": "Claude Code for Software Development",
+        "school": "DEXS · Knowmad Mood",
+        "date": "Oct 2026 · 16 h",
+        "note": "Agentic loop, context management, skills, agents and subagents, MCPs, hooks, multi-agent development and AI in CI/CD pipelines."
+      }
+    ],
     "items": [
       {
         "degree": "Frontend Master",
@@ -89,7 +105,8 @@
         "degree": "Art Baccalaureate",
         "school": "IES Politécnico Jesús Marín",
         "date": "2002 - 2004",
-        "note": "Creative background and an eye for UI design."
+        "note": "Creative background and an eye for UI design.",
+        "minor": true
       }
     ]
   },
@@ -112,7 +129,8 @@
     "copilot": "In-editor autocompletion, optimization suggestions and refactoring.",
     "notebook": "Summaries, presentations and structuring technical documentation.",
     "antigravity": "AI agents I used to build this website.",
-    "chatgpt_claude": "Problem analysis, code review and support when designing solutions.",
+    "claude_code": "Agent-assisted development: subagents, MCPs, hooks and skills, backed by certified training.",
+    "chatgpt": "Problem analysis, code review and support when designing solutions.",
     "note_title": "Responsible use:",
     "note_desc": "I always verify what the AI suggests and turn to the official documentation when an answer doesn't convince me. Human oversight is key to ensuring software quality."
   },

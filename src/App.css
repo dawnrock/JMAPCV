@@ -936,6 +936,24 @@ h5 {
   color: var(--accent);
 }
 
+.edu-group + .edu-group {
+  margin-top: 10px;
+}
+
+.edu-group-title {
+  padding: 0 40px;
+  margin-bottom: 14px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.edu-group-courses .education-card {
+  align-items: flex-start;
+}
+
 .education-card.minor {
   background: rgba(26, 15, 46, 0.5);
   border-style: dashed;

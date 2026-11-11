@@ -6,7 +6,8 @@ const tools = [
     { name: 'GitHub Copilot', key: 'copilot' },
     { name: 'Google NotebookLM', key: 'notebook' },
     { name: 'Google Antigravity', key: 'antigravity' },
-    { name: 'ChatGPT / Claude', key: 'chatgpt_claude' },
+    { name: 'Claude Code', key: 'claude_code' },
+    { name: 'ChatGPT', key: 'chatgpt' },
 ];
 
 const IA = () => {
