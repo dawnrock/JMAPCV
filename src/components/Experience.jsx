@@ -93,8 +93,8 @@ const Experience = () => {
                                                 <p>{t(`${pBase}.desc`)}</p>
                                                 {proj.hasAchievement && (
                                                     <p className="achievement">
-                                                        <i className="fas fa-trophy" aria-hidden="true"></i>
-                                                        <span><strong>{t('experience.achievement')}:</strong> {t(`${pBase}.achievement`)}</span>
+                                                        <i className="fas fa-check" aria-hidden="true"></i>
+                                                        <span>{t(`${pBase}.achievement`)}</span>
                                                     </p>
                                                 )}
                                                 <div className="tech-tags">

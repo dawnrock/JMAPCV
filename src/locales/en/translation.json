@@ -32,7 +32,6 @@
   "experience": {
     "title": "Professional Experience",
     "doc_title": "View {{tech}} documentation",
-    "achievement": "Achievement",
     "jobs": {
       "knowmadmood": {
         "title": "Full Stack Developer",
@@ -54,10 +53,10 @@
           "desc": "End-to-end development of a web application for employee time tracking and attendance management."
         },
         "p2": {
-          "name": "Healthcare Data Management Platform",
+          "name": "Healthcare Data Management Platform (DKV)",
           "date": "Mar 2022 - Oct 2025",
           "desc": "Management of a healthcare interoperability platform for the medical insurance sector.",
-          "achievement": "On the DKV project, I fixed a user duplication issue in the registration processes and improved the performance of those processes."
+          "achievement": "Fixed a user duplication issue in the registration processes and improved their performance."
         }
       },
       "bimaxpro": {
