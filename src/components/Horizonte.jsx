@@ -14,15 +14,12 @@ const Horizonte = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
             >
-                <h2 className="section-title"><i className="fas fa-rocket" style={{ marginRight: '10px' }}></i>{t('horizonte.title')}</h2>
+                <h2 className="section-title"><i className="fas fa-rocket" aria-hidden="true"></i>{t('horizonte.title')}</h2>
                 <div className="about-content">
                     <p>
                         <Trans i18nKey="horizonte.p1">
                             <strong />
                         </Trans>
-                    </p>
-                    <p style={{ marginTop: '1rem' }}>
-                        {t('horizonte.p2')}
                     </p>
                 </div>
             </motion.div>

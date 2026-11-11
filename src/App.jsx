@@ -19,9 +19,9 @@ function App() {
       <div className="main-sections">
         <div className="container">
           <About />
+          <Skills />
           <Experience />
           <Education />
-          <Skills />
           <Horizonte />
           <IA />
           <Contact />

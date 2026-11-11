@@ -5,58 +5,69 @@
         "ia": "IA",
         "experience": "Experiencia",
         "education": "Formación",
-        "skills": "Skills",
+        "skills": "Habilidades",
         "horizonte": "Proyección",
         "contact": "Contacto",
-        "menu": "Menú"
+        "menu": "Menú",
+        "open_menu": "Abrir menú",
+        "close_menu": "Cerrar menú",
+        "main": "Navegación principal",
+        "switch_lang": "Switch to English"
     },
     "hero": {
         "greeting": "Hola, soy",
         "name": "José Manuel Alba Peña",
         "role": "Desarrollador Full Stack",
-        "description": "Desarrollador Full Stack apasionado por resolver retos técnicos complejos mediante código limpio, combinando arquitectura de software sólida con curiosidad continua por la innovación y la IA.",
+        "description": "Construyo aplicaciones web con <0>.NET, C# y Angular</0>, de la base de datos a la interfaz. 5 años desarrollando software para <0>banca, salud y logística</0>.",
         "contact": "Contactar",
-        "view_cv": "Ver CV"
+        "view_cv": "Ver CV",
+        "scroll": "Ir a Sobre mí",
+        "photo_alt": "Foto de José Manuel Alba Peña"
     },
     "about": {
         "title": "Sobre mí",
-        "p1": "Desarrollador Full Stack con 5 años de experiencia en el ciclo completo de desarrollo de software. Especializado en arquitectura MVC e implementación de control de versiones, dando siempre prioridad a un código limpio y escalable.",
-        "p2": "Estoy familiarizado con la gestión de Sprints, historias de usuario y tareas dentro de metodologías ágiles. Además, poseo buenas capacidades para realizar análisis funcionales, técnicos y estimaciones, asegurando el cumplimiento de los objetivos del proyecto."
+        "p1": "Desarrollador Full Stack con 5 años de experiencia en todo el ciclo de vida del software: análisis, estimación, desarrollo y soporte en producción. He trabajado en entornos exigentes como la conciliación bancaria de Banco Santander o la interoperabilidad de datos sanitarios para aseguradoras.",
+        "p2": "Trabajo con metodologías ágiles (sprints, historias de usuario, tareas) y me siento cómodo tanto escribiendo código como hablando con negocio para traducir requisitos en soluciones."
     },
     "experience": {
         "title": "Experiencia Laboral",
         "doc_title": "Ver documentación de {{tech}}",
+        "achievement": "Logro",
         "jobs": {
             "knowmadmood": {
                 "title": "Desarrollador Full Stack",
+                "period": "Feb 2026 - Sep 2026",
                 "description": "Desarrollo full stack y resolución de incidencias para Banco Santander.",
                 "p1": {
                     "name": "Plataforma de Conciliación Bancaria (Banco Santander)",
                     "date": "Feb 2026 - Sep 2026",
-                    "desc": "Desarrollo y mantenimiento de aplicación de conciliación bancaria, análisis y resolución de incidencias técnicas."
+                    "desc": "Desarrollo y mantenimiento de la aplicación de conciliación bancaria, y análisis y resolución de incidencias técnicas en entorno bancario."
                 }
             },
             "salutic": {
                 "title": "Desarrollador Full Stack",
+                "period": "Mar 2022 - Feb 2026",
                 "description": "Desarrollo integral de aplicaciones de gestión sanitaria y control horario.",
                 "p1": {
                     "name": "Proyecto Staffy (Fichaje Laboral)",
                     "date": "Oct 2025 - Feb 2026",
-                    "desc": "Desarrollo integral de aplicación web dedicada a la gestión de fichajes y control horario."
+                    "desc": "Desarrollo integral de una aplicación web para la gestión de fichajes y el control horario."
                 },
                 "p2": {
                     "name": "Plataforma de Gestión de Datos Sanitarios",
                     "date": "Mar 2022 - Oct 2025",
-                    "desc": "Administración de plataforma de interoperabilidad para el sector de seguros médicos."
+                    "desc": "Administración de una plataforma de interoperabilidad para el sector de seguros médicos.",
+                    "achievement": "En el proyecto para DKV, resolví un problema de duplicación de usuarios en los procesos de alta y mejoré el rendimiento de dichos procesos."
                 }
             },
             "bimaxpro": {
                 "title": "Desarrollador Frontend",
-                "description": "Desarrollo de aplicación web para la gestión y envío de pruebas sanitarias en el sector logístico-pesquero.",
+                "period": "Nov 2021 - Feb 2022",
+                "description": "Desarrollo de una aplicación web para la gestión y envío de pruebas sanitarias en el sector logístico-pesquero.",
                 "p1": {
-                    "name": "Plataforma de gestión de análisis higienico-sanitarios",
+                    "name": "Plataforma de gestión de análisis higiénico-sanitarios",
                     "date": "Nov 2021 - Feb 2022",
-                    "desc": "Desarrollo de aplicación para la gestión de pruebas sanitarias entre puertos pesqueros y laboratorios."
+                    "desc": "Desarrollo de una aplicación para agilizar la gestión de pruebas sanitarias entre puertos pesqueros y laboratorios."
                 }
             }
         }
@@ -65,7 +76,7 @@
         "title": "Formación Académica",
         "items": [
             {
-                "degree": "Frontend Máster",
+                "degree": "Máster Frontend",
                 "school": "Lemoncode",
                 "url": "https://lemoncode.net",
                 "date": "Sep 2020 - May 2021"
@@ -78,8 +89,9 @@
             },
             {
                 "degree": "Bachillerato de Artes",
-                "school": "IES Politecnico Jesus Marin",
-                "date": "2002 - 2004"
+                "school": "IES Politécnico Jesús Marín",
+                "date": "2002 - 2004",
+                "note": "Base creativa y ojo para el diseño de interfaces."
             }
         ]
     },
@@ -88,23 +100,23 @@
         "categories": {
             "frontend": "Frontend",
             "backend": "Backend",
-            "tools": "Tools & Cloud",
+            "tools": "Herramientas y Cloud",
             "ai": "Inteligencia Artificial"
         }
     },
     "horizonte": {
         "title": "Proyección Profesional",
-        "p1": "Mi objetivo es unirme a una empresa que comparta la visión de crecimiento continuo del desarrollador. Entornos que ofrezcan acceso a <0>certificaciones oficiales</0> y capacitación avanzada en tecnologías de vanguardia.",
-        "p2": "Busco ampliar constantemente mi trayectoria profesional dominando nuevas herramientas y metodologías que me permitan aportar soluciones innovadoras y de alta calidad."
+        "p1": "Busco un equipo donde seguir creciendo técnicamente —<0>certificaciones oficiales</0>, arquitectura cloud, IA aplicada— y donde pueda aportar desde el primer día mi experiencia en .NET y Angular en proyectos de sectores regulados."
     },
     "ia": {
         "title": "Inteligencia Artificial",
-        "intro": "Estoy familiarizado con el uso de diversos asistentes de Inteligencia Artificial para potenciar el desarrollo y la productividad. Estas herramientas me han permitido adaptarme rápidamente a nuevas tecnologías y aprender de una forma más eficiente. A continuación, detallo las que utilizo habitualmente:",
-        "copilot": "Asistente de código en tiempo real para acelerar la escritura, sugerir optimizaciones y refactorizar funciones complejas.",
-        "notebook": "Herramienta para crear presentaciones, generar resúmenes y estructurar documentación técnica de manera eficiente.",
-        "antigravity": "Colaborador en el desarrollo de esta aplicación. Esta tecnología ha permitido mejorar la calidad del código y agilizar la implementación de funcionalidades, demostrando el potencial de la programación asistida por IA.",
-        "note_title": "Nota importante:",
-        "note_desc": "Hago un uso responsable de estas herramientas, verificando siempre la validez de los datos y consultando la documentación oficial en caso de que la respuesta de la IA no sea totalmente convincente. La supervisión humana es clave para garantizar la calidad y corrección del software."
+        "intro": "Uso asistentes de IA a diario para desarrollar más rápido y aprender nuevas tecnologías con más eficiencia:",
+        "copilot": "Autocompletado, sugerencias de optimización y refactorización en el editor.",
+        "notebook": "Resúmenes, presentaciones y estructuración de documentación técnica.",
+        "antigravity": "Agentes de IA con los que he desarrollado esta web.",
+        "chatgpt_claude": "Análisis de problemas, revisión de código y apoyo en el diseño de soluciones.",
+        "note_title": "Uso responsable:",
+        "note_desc": "Verifico siempre lo que propone la IA y recurro a la documentación oficial cuando una respuesta no me convence. La supervisión humana es clave para garantizar la calidad del software."
     },
     "contact": {
         "title": "¿Hablamos?",

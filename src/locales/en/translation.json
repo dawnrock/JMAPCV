@@ -8,36 +8,45 @@
     "skills": "Skills",
     "horizonte": "Vision",
     "contact": "Contact",
-    "menu": "Menu"
+    "menu": "Menu",
+    "open_menu": "Open menu",
+    "close_menu": "Close menu",
+    "main": "Main navigation",
+    "switch_lang": "Cambiar a Español"
   },
   "hero": {
     "greeting": "Hi, I'm",
     "name": "José Manuel Alba Peña",
     "role": "Full Stack Developer",
-    "description": "Full Stack Developer passionate about solving complex technical challenges through clean code, combining solid software architecture with a continuous curiosity for innovation and AI.",
+    "description": "I build web applications with <0>.NET, C# and Angular</0>, from the database to the user interface. 5 years building software for <0>banking, healthcare and logistics</0>.",
     "contact": "Contact",
-    "view_cv": "View CV"
+    "view_cv": "View CV",
+    "scroll": "Go to About Me",
+    "photo_alt": "Photo of José Manuel Alba Peña"
   },
   "about": {
     "title": "About Me",
-    "p1": "Full Stack Developer with 5 years of experience in the complete software development lifecycle. Specialized in MVC architecture and version control implementation, always prioritizing clean and scalable code.",
-    "p2": "I am familiar with managing Sprints, user stories, and tasks within agile methodologies. Additionally, I have good capabilities for performing functional and technical analyses and estimates, ensuring project objectives are met."
+    "p1": "Full Stack Developer with 5 years of experience across the whole software lifecycle: analysis, estimation, development and production support. I have worked in demanding environments such as Banco Santander's bank reconciliation platform and healthcare data interoperability for insurance companies.",
+    "p2": "I work within agile methodologies (sprints, user stories, tasks) and I'm as comfortable writing code as I am talking with business stakeholders to turn requirements into solutions."
   },
   "experience": {
     "title": "Professional Experience",
     "doc_title": "View {{tech}} documentation",
+    "achievement": "Achievement",
     "jobs": {
       "knowmadmood": {
         "title": "Full Stack Developer",
+        "period": "Feb 2026 - Sep 2026",
         "description": "Full stack development and incident management for Banco Santander.",
         "p1": {
           "name": "Bank Reconciliation Platform (Banco Santander)",
           "date": "Feb 2026 - Sep 2026",
-          "desc": "Development and maintenance of a bank reconciliation application and issue analysis and troubleshooting."
+          "desc": "Development and maintenance of the bank reconciliation application, plus analysis and resolution of technical incidents in a banking environment."
         }
       },
       "salutic": {
         "title": "Full Stack Developer",
+        "period": "Mar 2022 - Feb 2026",
         "description": "Full-cycle development of healthcare management and time-tracking systems.",
         "p1": {
           "name": "Staffy Project (Time & Attendance)",
@@ -47,12 +56,14 @@
         "p2": {
           "name": "Healthcare Data Management Platform",
           "date": "Mar 2022 - Oct 2025",
-          "desc": "Management of a healthcare interoperability platform for the medical insurance sector."
+          "desc": "Management of a healthcare interoperability platform for the medical insurance sector.",
+          "achievement": "On the DKV project, I fixed a user duplication issue in the registration processes and improved the performance of those processes."
         }
       },
       "bimaxpro": {
         "title": "Frontend Developer",
-        "description": "Development of a web application for managing and processing sanitary tests in the logistics and fishing industry.",
+        "period": "Nov 2021 - Feb 2022",
+        "description": "Development of a web application for managing and submitting sanitary tests in the logistics and fishing industry.",
         "p1": {
           "name": "Hygiene & Safety Analysis Platform",
           "date": "Nov 2021 - Feb 2022",
@@ -78,8 +89,9 @@
       },
       {
         "degree": "Art Baccalaureate",
-        "school": "IES Politecnico Jesus Marin",
-        "date": "2002 - 2004"
+        "school": "IES Politécnico Jesús Marín",
+        "date": "2002 - 2004",
+        "note": "Creative background and an eye for UI design."
       }
     ]
   },
@@ -94,17 +106,17 @@
   },
   "horizonte": {
     "title": "Career Vision",
-    "p1": "My goal is to join an organization that fosters continuous professional growth, providing access to <0>official certifications</0> and advanced training in cutting-edge technologies.",
-    "p2": "I am committed to continuously expanding my expertise by mastering new tools and methodologies, enabling me to deliver innovative and high-quality software solutions."
+    "p1": "I'm looking for a team where I can keep growing technically —<0>official certifications</0>, cloud architecture, applied AI— while contributing my .NET and Angular experience in regulated industries from day one."
   },
   "ia": {
     "title": "Artificial Intelligence",
-    "intro": "I am familiar with using various Artificial Intelligence assistants to enhance development and productivity. These tools have allowed me to quickly adapt to new technologies and learn more efficiently. Below, I detail the ones I use regularly:",
-    "copilot": "Real-time code assistant to speed up writing, suggest optimizations, and refactor complex functions.",
-    "notebook": "Tool for creating presentations, generating summaries, and structuring technical documentation efficiently.",
-    "antigravity": "Collaborator in the development of this application. This technology has improved code quality and streamlined feature implementation, demonstrating the potential of AI-assisted programming.",
-    "note_title": "Important Note:",
-    "note_desc": "I use these tools responsibly, always verifying data validity and consulting official documentation if the AI's response is not entirely convincing. Human supervision is key to ensuring software quality and correctness."
+    "intro": "I use AI assistants every day to develop faster and learn new technologies more efficiently:",
+    "copilot": "In-editor autocompletion, optimization suggestions and refactoring.",
+    "notebook": "Summaries, presentations and structuring technical documentation.",
+    "antigravity": "AI agents I used to build this website.",
+    "chatgpt_claude": "Problem analysis, code review and support when designing solutions.",
+    "note_title": "Responsible use:",
+    "note_desc": "I always verify what the AI suggests and turn to the official documentation when an answer doesn't convince me. Human oversight is key to ensuring software quality."
   },
   "contact": {
     "title": "Let's talk!",

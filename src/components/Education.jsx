@@ -14,14 +14,14 @@ const Education = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
             >
-                <i className="fas fa-graduation-cap" style={{ marginRight: '10px' }}></i>{t('education.title')}
+                <i className="fas fa-graduation-cap" aria-hidden="true"></i>{t('education.title')}
             </motion.h2>
 
             <div className="education-grid">
                 {Array.isArray(educationItems) && educationItems.map((item, index) => (
                     <motion.div
                         key={index}
-                        className="education-card"
+                        className={`education-card ${item.note ? 'minor' : ''}`}
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
@@ -37,6 +37,7 @@ const Education = () => {
                             ) : (
                                 <p className="school">{item.school}</p>
                             )}
+                            {item.note && <p className="edu-note">{item.note}</p>}
                         </div>
                     </motion.div>
                 ))}

@@ -2,6 +2,13 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
+const tools = [
+    { name: 'GitHub Copilot', key: 'copilot' },
+    { name: 'Google NotebookLM', key: 'notebook' },
+    { name: 'Google Antigravity', key: 'antigravity' },
+    { name: 'ChatGPT / Claude', key: 'chatgpt_claude' },
+];
+
 const IA = () => {
     const { t } = useTranslation();
 
@@ -14,30 +21,19 @@ const IA = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
             >
-                <h2 className="section-title"><i className="fas fa-robot" style={{ marginRight: '10px' }}></i>{t('ia.title')}</h2>
+                <h2 className="section-title"><i className="fas fa-robot" aria-hidden="true"></i>{t('ia.title')}</h2>
                 <div className="about-content">
-                    <p style={{ marginBottom: '1.5rem' }}>
-                        {t('ia.intro')}
-                    </p>
-                    <ul style={{ listStyle: 'none', paddingLeft: 0, marginBottom: '2rem' }}>
-                        <li style={{ marginBottom: '1rem', paddingLeft: '20px', position: 'relative' }}>
-                            <span style={{ position: 'absolute', left: 0, color: 'var(--accent)' }}>•</span>
-                            <strong>GitHub Copilot:</strong> {t('ia.copilot')}
-                        </li>
-                        <li style={{ marginBottom: '1rem', paddingLeft: '20px', position: 'relative' }}>
-                            <span style={{ position: 'absolute', left: 0, color: 'var(--accent)' }}>•</span>
-                            <strong>Google NotebookLM:</strong> {t('ia.notebook')}
-                        </li>
-                        <li style={{ marginBottom: '1rem', paddingLeft: '20px', position: 'relative' }}>
-                            <span style={{ position: 'absolute', left: 0, color: 'var(--accent)' }}>•</span>
-                            <strong>Antigravity (Google DeepMind):</strong> {t('ia.antigravity')}
-                        </li>
+                    <p>{t('ia.intro')}</p>
+                    <ul className="ia-list">
+                        {tools.map((tool) => (
+                            <li key={tool.key}>
+                                <strong>{tool.name}:</strong> {t(`ia.${tool.key}`)}
+                            </li>
+                        ))}
                     </ul>
-                    <div style={{ marginTop: '1.5rem', borderLeft: '4px solid var(--accent)', paddingLeft: '1rem' }}>
-                        <h4 style={{ color: 'var(--accent)', marginBottom: '0.5rem', fontSize: '1.1rem' }}>{t('ia.note_title')}</h4>
-                        <p style={{ fontWeight: 500, margin: 0 }}>
-                            {t('ia.note_desc')}
-                        </p>
+                    <div className="ia-note">
+                        <h3>{t('ia.note_title')}</h3>
+                        <p>{t('ia.note_desc')}</p>
                     </div>
                 </div>
             </motion.div>

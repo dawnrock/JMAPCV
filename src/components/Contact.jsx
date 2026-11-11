@@ -21,7 +21,7 @@ const Contact = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
             >
-                <h2><i className="fas fa-envelope" style={{ marginRight: '10px' }}></i>{t('contact.title')}</h2>
+                <h2><i className="fas fa-envelope" aria-hidden="true"></i>{t('contact.title')}</h2>
                 <p>{t('contact.subtitle')}</p>
 
                 <div className="contact-grid">
