@@ -8,13 +8,13 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
+      includeAssets: ['favicon.svg', 'profile.jpg', 'bg-brain.jpg'],
       manifest: {
-        name: 'CV - Jose Manuel Alba Peña',
-        short_name: 'CV Jose Manuel',
-        description: 'CV Interactivo de Jose Manuel Alba Peña',
-        theme_color: '#2c3e50',
-        background_color: '#ffffff',
+        name: 'CV - José Manuel Alba Peña',
+        short_name: 'CV José Manuel',
+        description: 'CV interactivo de José Manuel Alba Peña',
+        theme_color: '#0a0118',
+        background_color: '#0a0118',
         display: 'standalone',
         icons: [
           {

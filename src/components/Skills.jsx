@@ -14,7 +14,9 @@ const Skills = () => {
         "jQuery": "https://jquery.com/",
         // Backend
         ".NET Core / C#": "https://dotnet.microsoft.com/",
-        "Entity Framework": "https://docs.microsoft.com/en-us/ef/",
+        "Entity Framework": "https://learn.microsoft.com/ef/",
+        "LINQ": "https://learn.microsoft.com/dotnet/csharp/linq/",
+        "DDD": "https://martinfowler.com/bliki/DomainDrivenDesign.html",
         "SQL Server": "https://www.microsoft.com/en-us/sql-server",
         "MySQL": "https://www.mysql.com/",
         "Intersystems IRIS": "https://www.intersystems.com/products/intersystems-iris/",
@@ -24,12 +26,15 @@ const Skills = () => {
         "Jira": "https://www.atlassian.com/software/jira",
         "Postman": "https://www.postman.com/",
         "Kibana": "https://www.elastic.co/kibana",
+        "Azure DevOps": "https://azure.microsoft.com/products/devops/",
+        "GitHub Actions": "https://github.com/features/actions",
+        "SharePoint": "https://www.microsoft.com/microsoft-365/sharepoint/collaboration",
         // AI
         "GitHub Copilot": "https://github.com/features/copilot",
         "Google NotebookLM": "https://notebooklm.google.com/",
-        "AI Agents (Antigravity)": "https://deepmind.google/",
+        "Google Antigravity": "https://antigravity.google/",
         "ChatGPT": "https://openai.com/chatgpt",
-        "Claude": "https://www.anthropic.com/claude"
+        "Claude Code": "https://www.anthropic.com/claude-code"
     };
 
     const skillCategories = [
@@ -41,17 +46,17 @@ const Skills = () => {
         {
             title: t('skills.categories.backend'),
             icon: "fa-server",
-            skills: [".NET Core / C#", "Entity Framework", "SQL Server", "MySQL", "Intersystems IRIS"]
+            skills: [".NET Core / C#", "Entity Framework", "LINQ", "DDD", "SQL Server", "MySQL", "Intersystems IRIS"]
         },
         {
             title: t('skills.categories.tools'),
             icon: "fa-cloud",
-            skills: ["Git / GitLab", "Azure", "Jira", "Postman", "Kibana"]
+            skills: ["Git / GitLab", "Azure", "Azure DevOps", "GitHub Actions", "SharePoint", "Jira", "Postman", "Kibana"]
         },
         {
             title: t('skills.categories.ai'),
             icon: "fa-robot",
-            skills: ["GitHub Copilot", "Google NotebookLM", "AI Agents (Antigravity)", "ChatGPT", "Claude"]
+            skills: ["GitHub Copilot", "Google NotebookLM", "Google Antigravity", "Claude Code", "ChatGPT"]
         }
     ];
 
@@ -78,7 +83,7 @@ const Skills = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
             >
-                <i className="fas fa-laptop-code" style={{ marginRight: '10px' }}></i>{t('skills.title')}
+                <i className="fas fa-laptop-code" aria-hidden="true"></i>{t('skills.title')}
             </motion.h2>
 
             <motion.div

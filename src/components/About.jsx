@@ -14,7 +14,7 @@ const About = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
             >
-                <h2 className="section-title"><i className="fas fa-user" style={{ marginRight: '10px' }}></i>{t('about.title')}</h2>
+                <h2 className="section-title"><i className="fas fa-user" aria-hidden="true"></i>{t('about.title')}</h2>
                 <div className="about-content">
                     <p>{t('about.p1')}</p>
                     <p>{t('about.p2')}</p>

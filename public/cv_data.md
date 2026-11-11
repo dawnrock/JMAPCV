@@ -1,7 +1,7 @@
 # Datos del CV - Manuel
 
 ## Información Personal
-- **Nombre**: Jose Manuel Alba Peña
+- **Nombre**: José Manuel Alba Peña
 - **Título**: Desarrollador Full Stack
 - **Email**: manualbadj@gmail.com
 - **Teléfono**: +34 651759534
@@ -38,7 +38,7 @@ Desarrollador full-stack con 5 años de experiencia desempeñando roles tanto en
     *   **Tecnologías**: Angular 12, .NET (LINQ, Entity Framework), PostgreSQL.
 
 ## Educación
-- **Frontend Máster** | Lemoncode (Sep 2020 - May 2021)
+- **Máster Frontend** | Lemoncode (Sep 2020 - May 2021)
 - **Bootcamp Javascript** | Lemoncode (Mar 2020 - Oct 2020)
 - **Bachillerato de Artes** | (Ene 2002 - Ene 2004)
 
