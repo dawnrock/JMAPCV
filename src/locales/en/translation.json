@@ -125,6 +125,6 @@
     "github": "GitHub"
   },
   "footer": {
-    "built_with": "Built with"
+    "made_with": "Made with <0>React</0> and <1>Vite</1>"
   }
 }

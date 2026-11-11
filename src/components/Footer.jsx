@@ -1,34 +1,19 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { Trans } from 'react-i18next';
 
 const Footer = () => {
-    const { t } = useTranslation();
-    const technologies = [
-        { name: 'React', url: 'https://react.dev/', icon: 'fa-react', iconClass: 'fab' },
-        { name: 'Vite', url: 'https://vitejs.dev/', icon: 'fa-bolt-lightning', iconClass: 'fas' },
-        { name: 'Framer Motion', url: 'https://www.framer.com/motion/', icon: 'fa-film', iconClass: 'fas' },
-        { name: 'FontAwesome', url: 'https://fontawesome.com/', icon: 'fa-font-awesome', iconClass: 'fab' }
-    ];
+    const year = new Date().getFullYear();
 
     return (
         <footer className="footer">
-            <div className="footer-content">
-                <p className="footer-title">{t('footer.built_with')}</p>
-                <div className="tech-stack">
-                    {technologies.map((tech, index) => (
-                        <a
-                            key={index}
-                            href={tech.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="tech-link"
-                        >
-                            <i className={`${tech.iconClass} ${tech.icon}`}></i>
-                            <span>{tech.name}</span>
-                        </a>
-                    ))}
-                </div>
-            </div>
+            <p className="footer-line">
+                <Trans i18nKey="footer.made_with">
+                    <a href="https://react.dev/" target="_blank" rel="noopener noreferrer" />
+                    <a href="https://vitejs.dev/" target="_blank" rel="noopener noreferrer" />
+                </Trans>
+                <span className="footer-sep" aria-hidden="true">·</span>
+                © {year} José Manuel Alba Peña
+            </p>
         </footer>
     );
 };

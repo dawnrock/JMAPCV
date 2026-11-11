@@ -358,7 +358,7 @@ h5 {
 }
 
 .hero-text h1 {
-  font-size: 5.5rem;
+  font-size: clamp(2.2rem, 6.5vw, 5.5rem);
   line-height: 1;
   margin-bottom: 20px;
   font-weight: 800;
@@ -370,7 +370,7 @@ h5 {
 }
 
 .hero-text h2 {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
   color: var(--text-secondary);
   margin-bottom: 30px;
   font-weight: 400;
@@ -457,8 +457,9 @@ h5 {
 }
 
 .image-wrapper {
-  width: 350px;
-  height: 350px;
+  width: clamp(220px, 28vw, 350px);
+  aspect-ratio: 1;
+  max-width: 100%;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 0 50px var(--accent-glow);
@@ -470,8 +471,7 @@ h5 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform: rotate(-10deg) scale(1.05);
-  transition: transform 0.5s ease;
+  object-position: center 30%;
 }
 
 
@@ -721,11 +721,20 @@ h5 {
 .skill-card {
   background: var(--bg-card);
   padding: 20px;
-  /* Reduced from 40px to fit 4 cols */
   border-radius: 15px;
   border: 1px solid var(--border);
   text-align: center;
   transition: all 0.3s ease;
+}
+
+/* Reserve two lines so long titles don't misalign the cards */
+.skill-card h3 {
+  min-height: 2.6em;
+  line-height: 1.3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-wrap: balance;
 }
 
 .skill-card:hover {
@@ -958,63 +967,31 @@ h5 {
   width: 100%;
   background: rgba(10, 1, 24, 0.9);
   border-top: 1px solid rgba(192, 38, 211, 0.2);
-  padding: 40px 20px 30px;
+  padding: 24px 20px;
   margin-top: 10px;
-  /* Match section spacing */
 }
 
-.footer-content {
-  max-width: 1000px;
-  margin: 0 auto;
+.footer-line {
   text-align: center;
-}
-
-.footer-title {
-  font-size: 1.2rem;
+  font-size: 0.85rem;
   color: var(--text-secondary);
-  margin-bottom: 20px;
-  font-weight: 500;
 }
 
-.tech-stack {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
-}
-
-.tech-link {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 20px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(192, 38, 211, 0.2);
-  border-radius: 25px;
+.footer-line a {
   color: var(--text-primary);
-  text-decoration: none;
-  font-size: 0.95rem;
-  transition: all 0.3s ease;
+  text-decoration: underline;
+  text-decoration-color: rgba(192, 38, 211, 0.5);
+  text-underline-offset: 3px;
+  transition: color 0.3s ease;
 }
 
-.tech-link:hover {
-  background: rgba(192, 38, 211, 0.1);
-  border-color: var(--accent);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(192, 38, 211, 0.3);
-}
-
-.tech-link i {
-  font-size: 1.2rem;
+.footer-line a:hover {
   color: var(--accent);
 }
 
-.footer-copyright {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  opacity: 0.7;
+.footer-sep {
+  margin: 0 10px;
+  opacity: 0.6;
 }
 
 .contact-grid {
@@ -1025,23 +1002,37 @@ h5 {
   margin-top: 40px;
 }
 
-.contact-main {
+.email-row {
   display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
+  gap: 10px;
+  align-items: stretch;
+  max-width: 100%;
+}
+
+.contact-secondary {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  gap: 12px;
   justify-content: center;
 }
 
-.social-links {
-  display: flex;
-  gap: 20px;
-  margin: 10px 0;
+.contact-secondary .social-btn {
+  padding: 12px 18px;
+  white-space: nowrap;
+}
+
+.copy-feedback {
+  min-height: 1.2em;
+  margin-top: -12px;
+  font-size: 0.85rem;
+  color: var(--accent-secondary);
 }
 
 .contact-btn,
 .social-btn {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   padding: 12px 25px;
   background: rgba(255, 255, 255, 0.03);
@@ -1063,6 +1054,43 @@ h5 {
   box-shadow: 0 5px 20px var(--accent-glow);
 }
 
+.email-btn {
+  min-width: 0;
+  padding: 14px 28px;
+  font-weight: 600;
+  color: #fff;
+  border-color: transparent;
+  background: linear-gradient(135deg, #c026d3, #9333ea);
+  box-shadow: 0 6px 20px rgba(192, 38, 211, 0.35);
+}
+
+.email-btn:hover {
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 8px 28px rgba(192, 38, 211, 0.5);
+}
+
+.email-text {
+  overflow-wrap: anywhere;
+}
+
+.icon-btn {
+  flex-shrink: 0;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.icon-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  box-shadow: 0 5px 20px var(--accent-glow);
+}
+
 .copy-btn.copied {
   background: rgba(132, 204, 22, 0.1);
   border-color: var(--accent-secondary);
@@ -1077,15 +1105,45 @@ h5 {
   color: #fff;
 }
 
-@media (max-width: 768px) {
-  .contact-main {
-    flex-direction: column;
+@media (max-width: 720px) {
+  .contact-secondary {
+    grid-template-columns: minmax(0, 300px);
     width: 100%;
   }
 
-  .contact-btn {
+  .email-row {
     width: 100%;
+    max-width: 360px;
+  }
+
+  .email-row .email-btn {
+    flex: 1;
+    width: auto;
+    max-width: none;
+    padding: 12px 14px;
+  }
+}
+
+/* Compact navigation: the full link bar does not fit below ~1100px */
+@media (max-width: 1100px) {
+  .nav-placeholder,
+  .nav-links {
+    display: none;
+  }
+
+  .nav-container {
+    justify-content: flex-end;
+    padding: 0 20px;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+    align-items: center;
     justify-content: center;
+  }
+
+  .hero-content {
+    gap: 40px;
   }
 }
 
@@ -1252,30 +1310,9 @@ h5 {
     margin-bottom: 0rem;
   }
 
-  .contact-links {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-    /* Ensure container doesn't overflow */
-  }
-
-  .contact-btn {
-    width: 100%;
-    /* Take full width of container */
-    max-width: 300px;
-    /* Optional: limit max width for aesthetics */
-    justify-content: center;
-    box-sizing: border-box;
-    /* Include padding in width */
-    padding: 12px 15px;
-    /* Reduce horizontal padding slightly */
-    white-space: normal;
-    /* Allow wrapping */
-    word-break: break-word;
-    /* Break long words/emails if necessary */
+  .contact-btn,
+  .social-btn {
     font-size: 0.9rem;
-    /* Slightly smaller font for mobile safety */
   }
 
   .scroll-indicator {
