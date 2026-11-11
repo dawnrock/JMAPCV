@@ -17,6 +17,8 @@ const Skills = () => {
         "Entity Framework": "https://learn.microsoft.com/ef/",
         "LINQ": "https://learn.microsoft.com/dotnet/csharp/linq/",
         "DDD": "https://martinfowler.com/bliki/DomainDrivenDesign.html",
+        "xUnit": "https://xunit.net/",
+        "Moq": "https://github.com/devlooped/moq",
         "SQL Server": "https://www.microsoft.com/en-us/sql-server",
         "MySQL": "https://www.mysql.com/",
         "Intersystems IRIS": "https://www.intersystems.com/products/intersystems-iris/",
@@ -46,7 +48,7 @@ const Skills = () => {
         {
             title: t('skills.categories.backend'),
             icon: "fa-server",
-            skills: [".NET Core / C#", "Entity Framework", "LINQ", "DDD", "SQL Server", "MySQL", "Intersystems IRIS"]
+            skills: [".NET Core / C#", "Entity Framework", "LINQ", "DDD", "xUnit", "Moq", "SQL Server", "MySQL", "Intersystems IRIS"]
         },
         {
             title: t('skills.categories.tools'),
