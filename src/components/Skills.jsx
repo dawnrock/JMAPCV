@@ -26,6 +26,8 @@ const Skills = () => {
         "Jira": "https://www.atlassian.com/software/jira",
         "Postman": "https://www.postman.com/",
         "Kibana": "https://www.elastic.co/kibana",
+        "Azure DevOps": "https://azure.microsoft.com/products/devops/",
+        "GitHub Actions": "https://github.com/features/actions",
         "SharePoint": "https://www.microsoft.com/microsoft-365/sharepoint/collaboration",
         // AI
         "GitHub Copilot": "https://github.com/features/copilot",
@@ -49,7 +51,7 @@ const Skills = () => {
         {
             title: t('skills.categories.tools'),
             icon: "fa-cloud",
-            skills: ["Git / GitLab", "Azure", "SharePoint", "Jira", "Postman", "Kibana"]
+            skills: ["Git / GitLab", "Azure", "Azure DevOps", "GitHub Actions", "SharePoint", "Jira", "Postman", "Kibana"]
         },
         {
             title: t('skills.categories.ai'),

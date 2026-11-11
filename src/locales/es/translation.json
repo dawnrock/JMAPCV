@@ -115,7 +115,7 @@
         "categories": {
             "frontend": "Frontend",
             "backend": "Backend",
-            "tools": "Herramientas y Cloud",
+            "tools": "Herramientas, Cloud y CI/CD",
             "ai": "Inteligencia Artificial"
         }
     },
