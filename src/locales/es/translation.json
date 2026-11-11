@@ -63,9 +63,9 @@
                 "period": "Nov 2021 - Feb 2022",
                 "description": "Desarrollo de una aplicación web para la gestión y envío de pruebas sanitarias en el sector logístico-pesquero.",
                 "p1": {
-                    "name": "Plataforma de gestión de análisis higiénico-sanitarios",
+                    "name": "Plataforma de gestión de análisis higiénico-sanitarios (Ministerio de Sanidad)",
                     "date": "Nov 2021 - Feb 2022",
-                    "desc": "Desarrollo de una aplicación para agilizar la gestión de pruebas sanitarias entre puertos pesqueros y laboratorios."
+                    "desc": "Desarrollo de una aplicación que conecta los puertos pesqueros con los laboratorios públicos de análisis sanitarios, agilizando el envío y la gestión de las pruebas."
                 }
             }
         }

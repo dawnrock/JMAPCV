@@ -63,9 +63,9 @@
         "period": "Nov 2021 - Feb 2022",
         "description": "Development of a web application for managing and submitting sanitary tests in the logistics and fishing industry.",
         "p1": {
-          "name": "Hygiene & Safety Analysis Platform",
+          "name": "Hygiene & Safety Analysis Platform (Spanish Ministry of Health)",
           "date": "Nov 2021 - Feb 2022",
-          "desc": "Development of an application to streamline sanitary testing procedures between fishing ports and laboratories."
+          "desc": "Development of an application connecting fishing ports with public health testing laboratories, streamlining the submission and management of sanitary tests."
         }
       }
     }
