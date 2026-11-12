@@ -40,7 +40,7 @@
         "p1": {
           "name": "Bank Reconciliation Platform (Banco Santander)",
           "date": "Feb 2026 - Sep 2026",
-          "desc": "Sole technical owner of the project: managed requirements and tasks directly with the client, developed with the AI agent Devin (assigning tasks and reviewing its code), handled deployments up to the pre-production (PRE) environment and resolved technical incidents."
+          "desc": "Technical owner of the project: sole manager of requirements and tasks directly with the client, developed with the AI agent Devin (assigning tasks and reviewing its code), handled deployments up to the pre-production (PRE) environment and resolved technical incidents."
         }
       },
       "salutic": {

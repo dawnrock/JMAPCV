@@ -40,7 +40,7 @@
                 "p1": {
                     "name": "Plataforma de Conciliación Bancaria (Banco Santander)",
                     "date": "Feb 2026 - Sep 2026",
-                    "desc": "Único responsable técnico del proyecto: gestión de requisitos y tareas directamente con el cliente, desarrollo apoyado en el agente de IA Devin (asignación de tareas y revisión de su código), despliegues hasta el entorno de preproducción (PRE) y resolución de incidencias técnicas."
+                    "desc": "Responsable técnico del proyecto: gestor único de requisitos y tareas directamente con el cliente, desarrollo apoyado en el agente de IA Devin (asignación de tareas y revisión de su código), despliegues hasta el entorno de preproducción (PRE) y resolución de incidencias técnicas."
                 }
             },
             "salutic": {

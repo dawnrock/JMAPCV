@@ -17,7 +17,7 @@ Desarrollador Full Stack con 5 años de experiencia en todo el ciclo de vida del
 ### Knowmad Mood | Desarrollador Full Stack
 **Febrero 2026 - Actualidad**
 *   **Plataforma de Conciliación Bancaria (Banco Santander) (Feb 2026 - Sep 2026)**:
-    *   Único responsable técnico del proyecto: gestión de requisitos y tareas directamente con el cliente.
+    *   Responsable técnico del proyecto: gestor único de requisitos y tareas directamente con el cliente.
     *   Desarrollo con el agente de IA Devin: asignación de tareas y revisión de su código.
     *   Despliegues hasta el entorno de preproducción (PRE).
     *   Resolución de incidencias técnicas en entorno bancario.
