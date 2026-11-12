@@ -59,8 +59,8 @@ const Contact = () => {
                         <a href="https://github.com/dawnrock" target="_blank" rel="noopener noreferrer" className="social-btn github">
                             <i className="fab fa-github" aria-hidden="true"></i> {t('contact.github')}
                         </a>
-                        <a href="tel:+34651759534" className="social-btn phone">
-                            <i className="fas fa-phone" aria-hidden="true"></i> +34 651 759 534
+                        <a href="https://wa.me/34651759534" target="_blank" rel="noopener noreferrer" className="social-btn whatsapp" title="WhatsApp">
+                            <i className="fab fa-whatsapp" aria-hidden="true"></i> +34 651 759 534
                         </a>
                     </div>
                 </div>

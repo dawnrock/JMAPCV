@@ -5,7 +5,7 @@
 - **Título**: Desarrollador Full Stack
 - **Web**: jmapcv.vercel.app
 - **Email**: manualbadj@gmail.com
-- **Teléfono**: +34 651 759 534
+- **WhatsApp**: +34 651 759 534 (no atiendo llamadas)
 - **Ubicación**: [Pendiente]
 - **Idiomas**: Español (Nativo), Inglés (Competencia profesional).
 
