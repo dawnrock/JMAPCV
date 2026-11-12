@@ -145,6 +145,6 @@
         "github": "GitHub"
     },
     "footer": {
-        "made_with": "App desarrollada con <0>React</0> y <1>Vite</1>"
+        "made_with": "Web desarrollada con <0>React</0> y <1>Vite</1>"
     }
 }
