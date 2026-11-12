@@ -130,7 +130,7 @@
     "notebook": "Summaries, presentations and structuring technical documentation.",
     "antigravity": "AI agents I used to build this website.",
     "claude_code": "Agent-assisted development: subagents, MCPs, hooks and skills, backed by certified training.",
-    "devin": "Autonomous AI agent I assign development tasks to, reviewing its code before every deployment.",
+    "devin": "Autonomous AI agent I have worked with on my latest projects, both for analysis (technical, root-cause and vulnerability) and estimates, and for code development and CI/CD processes.",
     "graphify": "Code knowledge graphs that cut token usage when starting sessions with AI agents. I use it in my personal projects.",
     "chatgpt": "Problem analysis, code review and support when designing solutions.",
     "note_title": "My approach:",
