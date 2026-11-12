@@ -130,7 +130,7 @@
         "notebook": "Resúmenes, presentaciones y estructuración de documentación técnica.",
         "antigravity": "Agentes de IA con los que he desarrollado esta web.",
         "claude_code": "Desarrollo asistido por agentes: subagentes, MCPs, hooks y skills, con formación certificada.",
-        "devin": "Agente de IA al que asignaba las tareas de desarrollo en el proyecto de Banco Santander, revisando su código antes de cada despliegue.",
+        "devin": "Agente de IA autónomo al que asigno tareas de desarrollo, revisando su código antes de cada despliegue.",
         "graphify": "Grafos de conocimiento del código que reducen el consumo de tokens al iniciar sesión con agentes de IA. Lo uso en mis proyectos personales.",
         "chatgpt": "Análisis de problemas, revisión de código y apoyo en el diseño de soluciones.",
         "note_title": "Mi enfoque:",
