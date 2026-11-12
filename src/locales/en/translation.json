@@ -26,7 +26,7 @@
   },
   "about": {
     "title": "About Me",
-    "p1": "Full Stack Developer with 5 years of experience across the whole software lifecycle: analysis, estimation, development and production support. I have worked in demanding environments such as Banco Santander's bank reconciliation platform and healthcare data interoperability for insurance companies.",
+    "p1": "Full Stack Developer with 5 years of experience across the whole software lifecycle: analysis, estimation, development and production support. I have worked in demanding environments such as Banco Santander's bank reconciliation platform and healthcare data interoperability for insurers such as DKV.",
     "p2": "I work within agile methodologies (sprints, user stories, tasks) and I'm as comfortable writing code as I am talking with business stakeholders to turn requirements into solutions."
   },
   "experience": {
@@ -35,12 +35,12 @@
     "jobs": {
       "knowmadmood": {
         "title": "Full Stack Developer",
-        "period": "Feb 2026 - Sep 2026",
+        "period": "Feb 2026 - Present",
         "description": "Full stack development and incident management for Banco Santander.",
         "p1": {
           "name": "Bank Reconciliation Platform (Banco Santander)",
           "date": "Feb 2026 - Sep 2026",
-          "desc": "Development and maintenance of the bank reconciliation application, plus analysis and resolution of technical incidents in a banking environment."
+          "desc": "Technical owner of the project: sole manager of requirements and tasks directly with the client, developed with the AI agent Devin (assigning tasks and reviewing its code), handled deployments up to the pre-production (PRE) environment and resolved technical incidents."
         }
       },
       "salutic": {
@@ -130,9 +130,11 @@
     "notebook": "Summaries, presentations and structuring technical documentation.",
     "antigravity": "AI agents I used to build this website.",
     "claude_code": "Agent-assisted development: subagents, MCPs, hooks and skills, backed by certified training.",
+    "devin": "AI agent I assigned development tasks to on the Banco Santander project, reviewing its code before every deployment.",
+    "graphify": "Code knowledge graphs that cut token usage when starting sessions with AI agents. I use it in my personal projects.",
     "chatgpt": "Problem analysis, code review and support when designing solutions.",
-    "note_title": "Responsible use:",
-    "note_desc": "I always verify what the AI suggests and turn to the official documentation when an answer doesn't convince me. Human oversight is key to ensuring software quality."
+    "note_title": "My approach:",
+    "note_desc": "I apply the Human-in-the-Loop model every day: AI agents do the development and I review every change before deploying it. For AI to be truly productive, it needs constant orchestration by an engineer."
   },
   "contact": {
     "title": "Let's talk!",

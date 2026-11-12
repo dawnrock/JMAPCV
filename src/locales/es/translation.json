@@ -26,7 +26,7 @@
     },
     "about": {
         "title": "Sobre mí",
-        "p1": "Desarrollador Full Stack con 5 años de experiencia en todo el ciclo de vida del software: análisis, estimación, desarrollo y soporte en producción. He trabajado en entornos exigentes como la conciliación bancaria de Banco Santander o la interoperabilidad de datos sanitarios para aseguradoras.",
+        "p1": "Desarrollador Full Stack con 5 años de experiencia en todo el ciclo de vida del software: análisis, estimación, desarrollo y soporte en producción. He trabajado en entornos exigentes como la conciliación bancaria de Banco Santander o la interoperabilidad de datos sanitarios para aseguradoras como DKV.",
         "p2": "Trabajo con metodologías ágiles (sprints, historias de usuario, tareas) y me siento cómodo tanto escribiendo código como hablando con negocio para traducir requisitos en soluciones."
     },
     "experience": {
@@ -35,12 +35,12 @@
         "jobs": {
             "knowmadmood": {
                 "title": "Desarrollador Full Stack",
-                "period": "Feb 2026 - Sep 2026",
+                "period": "Feb 2026 - Actualidad",
                 "description": "Desarrollo full stack y resolución de incidencias para Banco Santander.",
                 "p1": {
                     "name": "Plataforma de Conciliación Bancaria (Banco Santander)",
                     "date": "Feb 2026 - Sep 2026",
-                    "desc": "Desarrollo y mantenimiento de la aplicación de conciliación bancaria, y análisis y resolución de incidencias técnicas en entorno bancario."
+                    "desc": "Responsable técnico del proyecto: gestor único de requisitos y tareas directamente con el cliente, desarrollo apoyado en el agente de IA Devin (asignación de tareas y revisión de su código), despliegues hasta el entorno de preproducción (PRE) y resolución de incidencias técnicas."
                 }
             },
             "salutic": {
@@ -130,9 +130,11 @@
         "notebook": "Resúmenes, presentaciones y estructuración de documentación técnica.",
         "antigravity": "Agentes de IA con los que he desarrollado esta web.",
         "claude_code": "Desarrollo asistido por agentes: subagentes, MCPs, hooks y skills, con formación certificada.",
+        "devin": "Agente de IA al que asignaba las tareas de desarrollo en el proyecto de Banco Santander, revisando su código antes de cada despliegue.",
+        "graphify": "Grafos de conocimiento del código que reducen el consumo de tokens al iniciar sesión con agentes de IA. Lo uso en mis proyectos personales.",
         "chatgpt": "Análisis de problemas, revisión de código y apoyo en el diseño de soluciones.",
-        "note_title": "Uso responsable:",
-        "note_desc": "Verifico siempre lo que propone la IA y recurro a la documentación oficial cuando una respuesta no me convence. La supervisión humana es clave para garantizar la calidad del software."
+        "note_title": "Mi enfoque:",
+        "note_desc": "Aplico el modelo Human-in-the-Loop en mi día a día: los agentes de IA desarrollan y yo reviso cada cambio antes de desplegarlo. Para que la IA sea realmente productiva, necesita la orquestación constante de un técnico."
     },
     "contact": {
         "title": "¿Hablamos?",

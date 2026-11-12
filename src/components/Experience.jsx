@@ -22,7 +22,7 @@ const techDocs = {
 const jobsData = [
     {
         key: 'knowmadmood',
-        company: "Knowmad Mood (Banco Santander)",
+        company: "Knowmad Mood",
         projects: [
             { key: 'p1', tech: [".NET", "C#", "SQL Server", "SQL"] }
         ]
