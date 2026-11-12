@@ -1118,6 +1118,10 @@ h5 {
   color: #0077b5;
 }
 
+.social-btn.whatsapp i {
+  color: #25d366;
+}
+
 .social-btn.github i {
   color: #fff;
 }
