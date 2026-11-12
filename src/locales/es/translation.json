@@ -132,8 +132,8 @@
         "claude_code": "Desarrollo asistido por agentes: subagentes, MCPs, hooks y skills, con formación certificada.",
         "devin": "Agente de IA al que asignaba las tareas de desarrollo en el proyecto de Banco Santander, revisando su código antes de cada despliegue.",
         "chatgpt": "Análisis de problemas, revisión de código y apoyo en el diseño de soluciones.",
-        "note_title": "Uso responsable:",
-        "note_desc": "Verifico siempre lo que propone la IA y recurro a la documentación oficial cuando una respuesta no me convence. La supervisión humana es clave para garantizar la calidad del software."
+        "note_title": "Mi enfoque:",
+        "note_desc": "Aplico el modelo Human-in-the-Loop en mi día a día: los agentes de IA desarrollan y yo reviso cada cambio antes de desplegarlo. Para que la IA sea realmente productiva, necesita la orquestación constante de un técnico."
     },
     "contact": {
         "title": "¿Hablamos?",

@@ -132,8 +132,8 @@
     "claude_code": "Agent-assisted development: subagents, MCPs, hooks and skills, backed by certified training.",
     "devin": "AI agent I assigned development tasks to on the Banco Santander project, reviewing its code before every deployment.",
     "chatgpt": "Problem analysis, code review and support when designing solutions.",
-    "note_title": "Responsible use:",
-    "note_desc": "I always verify what the AI suggests and turn to the official documentation when an answer doesn't convince me. Human oversight is key to ensuring software quality."
+    "note_title": "My approach:",
+    "note_desc": "I apply the Human-in-the-Loop model every day: AI agents do the development and I review every change before deploying it. For AI to be truly productive, it needs constant orchestration by an engineer."
   },
   "contact": {
     "title": "Let's talk!",
