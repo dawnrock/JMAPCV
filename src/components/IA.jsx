@@ -8,6 +8,7 @@ const tools = [
     { name: 'Google Antigravity', key: 'antigravity' },
     { name: 'Claude Code', key: 'claude_code' },
     { name: 'Devin', key: 'devin' },
+    { name: 'Graphify', key: 'graphify' },
     { name: 'ChatGPT', key: 'chatgpt' },
 ];
 

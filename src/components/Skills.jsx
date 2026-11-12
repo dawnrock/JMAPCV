@@ -37,7 +37,8 @@ const Skills = () => {
         "Google Antigravity": "https://antigravity.google/",
         "ChatGPT": "https://openai.com/chatgpt",
         "Claude Code": "https://www.anthropic.com/claude-code",
-        "Devin": "https://devin.ai/"
+        "Devin": "https://devin.ai/",
+        "Graphify": "https://github.com/safishamsi/graphify"
     };
 
     const skillCategories = [
@@ -59,7 +60,7 @@ const Skills = () => {
         {
             title: t('skills.categories.ai'),
             icon: "fa-robot",
-            skills: ["GitHub Copilot", "Google NotebookLM", "Google Antigravity", "Claude Code", "Devin", "ChatGPT"]
+            skills: ["GitHub Copilot", "Google NotebookLM", "Google Antigravity", "Claude Code", "Devin", "Graphify", "ChatGPT"]
         }
     ];
 

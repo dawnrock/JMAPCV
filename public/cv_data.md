@@ -54,7 +54,7 @@ Desarrollador Full Stack con 5 años de experiencia en todo el ciclo de vida del
 - **Frontend**: Angular 13+, React, JavaScript (ES6+), HTML5/CSS3, jQuery.
 - **Backend**: .NET Core / C#, Entity Framework, LINQ, DDD, xUnit, Moq, SQL Server, MySQL, PostgreSQL, Intersystems IRIS, ObjectScript.
 - **Herramientas, Cloud y CI/CD**: Git, GitLab, Azure, Azure DevOps, GitHub Actions, SharePoint, Jira, Postman, Kibana.
-- **Inteligencia Artificial**: Claude Code, Devin, GitHub Copilot, ChatGPT, Google NotebookLM, Google Antigravity.
+- **Inteligencia Artificial**: Claude Code, Devin, Graphify, GitHub Copilot, ChatGPT, Google NotebookLM, Google Antigravity.
 
 ## Intereses
 Deporte, ciencia, economía y nuevas tecnologías.

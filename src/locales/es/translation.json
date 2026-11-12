@@ -131,6 +131,7 @@
         "antigravity": "Agentes de IA con los que he desarrollado esta web.",
         "claude_code": "Desarrollo asistido por agentes: subagentes, MCPs, hooks y skills, con formación certificada.",
         "devin": "Agente de IA al que asignaba las tareas de desarrollo en el proyecto de Banco Santander, revisando su código antes de cada despliegue.",
+        "graphify": "Grafos de conocimiento del código que reducen el consumo de tokens al iniciar sesión con agentes de IA. Lo uso en mis proyectos personales.",
         "chatgpt": "Análisis de problemas, revisión de código y apoyo en el diseño de soluciones.",
         "note_title": "Mi enfoque:",
         "note_desc": "Aplico el modelo Human-in-the-Loop en mi día a día: los agentes de IA desarrollan y yo reviso cada cambio antes de desplegarlo. Para que la IA sea realmente productiva, necesita la orquestación constante de un técnico."
