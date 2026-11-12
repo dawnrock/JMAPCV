@@ -7,6 +7,7 @@ const tools = [
     { name: 'Google NotebookLM', key: 'notebook' },
     { name: 'Google Antigravity', key: 'antigravity' },
     { name: 'Claude Code', key: 'claude_code' },
+    { name: 'Devin', key: 'devin' },
     { name: 'ChatGPT', key: 'chatgpt' },
 ];
 

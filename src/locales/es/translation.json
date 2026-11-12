@@ -40,7 +40,7 @@
                 "p1": {
                     "name": "Plataforma de Conciliación Bancaria (Banco Santander)",
                     "date": "Feb 2026 - Sep 2026",
-                    "desc": "Desarrollo y mantenimiento de la aplicación de conciliación bancaria, y análisis y resolución de incidencias técnicas en entorno bancario."
+                    "desc": "Único responsable técnico del proyecto: gestión de requisitos y tareas directamente con el cliente, desarrollo apoyado en el agente de IA Devin (asignación de tareas y revisión de su código), despliegues hasta el entorno de preproducción (PRE) y resolución de incidencias técnicas."
                 }
             },
             "salutic": {
@@ -130,6 +130,7 @@
         "notebook": "Resúmenes, presentaciones y estructuración de documentación técnica.",
         "antigravity": "Agentes de IA con los que he desarrollado esta web.",
         "claude_code": "Desarrollo asistido por agentes: subagentes, MCPs, hooks y skills, con formación certificada.",
+        "devin": "Agente de IA al que asignaba las tareas de desarrollo en el proyecto de Banco Santander, revisando su código antes de cada despliegue.",
         "chatgpt": "Análisis de problemas, revisión de código y apoyo en el diseño de soluciones.",
         "note_title": "Uso responsable:",
         "note_desc": "Verifico siempre lo que propone la IA y recurro a la documentación oficial cuando una respuesta no me convence. La supervisión humana es clave para garantizar la calidad del software."
